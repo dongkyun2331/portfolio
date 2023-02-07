@@ -99,4 +99,33 @@ body {
 }
 
 .experience {
+  display: flex;
+  margin-top: 23px;
+}
+
+.experience > h2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+  margin-right: 54px;
+}
+
+.experience > .line {
+  width: 70px;
+  height: 3px;
+  background-color: #fff;
+  margin-top: 16px;
+}
+
+.experience_nav {
+  height: 94px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.experience_nav > li {
+  margin-bottom: 11px;
+  margin-right: 59px;
 }
