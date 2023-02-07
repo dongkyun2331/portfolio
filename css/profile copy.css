@@ -43,36 +43,3 @@ a {
 body {
   background-color: #000;
 }
-
-.home {
-  position: fixed;
-  width: 490px;
-  height: 406px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.profile {
-  width: 250px;
-  height: 250px;
-  margin: 0 120px 51px 120px;
-}
-
-.hello {
-  font-size: 24px;
-  color: #fff;
-  font-weight: 400;
-  margin-bottom: 51px;
-}
-
-.home > ul {
-  display: flex;
-  gap: 25px;
-  margin-left: 84px;
-}
-
-img {
-  width: 25px;
-  height: 25px;
-}
