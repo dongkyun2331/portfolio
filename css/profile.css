@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 
-ul {
-  list-style: none;
+li::marker {
+  color: #ffb800;
+  font-size: 1.5em;
 }
 
 a {
@@ -30,6 +31,7 @@ a {
   gap: 50px;
   margin-right: 50px;
   margin-top: 33px;
+  list-style: none;
 }
 
 .top .nav > ul > li > a {
@@ -118,14 +120,21 @@ body {
 }
 
 .experience_nav {
-  height: 94px;
+  height: 123px;
   color: #fff;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-left: 25px;
+  margin-top: 14px;
 }
 
 .experience_nav > li {
   margin-bottom: 11px;
   margin-right: 59px;
+}
+
+.uni {
+  color: #fff;
+  margin-top: 50px;
 }
