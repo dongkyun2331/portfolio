@@ -45,12 +45,12 @@ body {
 }
 
 .back {
-  display: block;
+  display: inline;
   margin-left: 50px;
   margin-top: 200px;
 }
 
-.content .back > img {
+.content > .back > img {
   width: 20px;
   height: 20px;
 }
