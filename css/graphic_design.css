@@ -43,3 +43,40 @@ a {
 body {
   background-color: #000;
 }
+
+.content {
+  width: 970px;
+  height: 559px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 92px;
+}
+
+.menu > li:nth-child(3) {
+  border-bottom: 3px solid #ffb800;
+}
+
+.menu > li > a {
+  color: #fff;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin-top: 74px;
+}
+
+.work > li > a > img {
+  width: 300px;
+  height: 225px;
+}

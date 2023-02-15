@@ -70,7 +70,6 @@ body {
 }
 
 .work {
-  height: 559px;
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
