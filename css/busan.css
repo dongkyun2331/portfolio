@@ -45,9 +45,9 @@ body {
 }
 
 .back {
-  display: inline;
-  margin-left: 50px;
-  margin-top: 200px;
+  position: fixed;
+  top: 100px;
+  left: 50px;
 }
 
 .content > .back > img {
