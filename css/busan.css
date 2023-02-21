@@ -50,13 +50,20 @@ body {
   left: 50px;
 }
 
+.content {
+  position: relative;
+  width: 1920px;
+  height: 3264.45px;
+  margin: 0 auto;
+}
+
 .content > .back > img {
   width: 20px;
   height: 20px;
 }
 
-.content > .intro{
-  position: fixed;
+.content > .intro > p {
+  position: absolute;
   top: 250px;
   left: 200px;
   font-size: 16px;
@@ -64,10 +71,47 @@ body {
   color: #fff;
 }
 
+.intro > .link {
+  position: absolute;
+  top: 290px;
+  left: 1470px;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.intro > .link > a {
+  width: 150px;
+  height: 50px;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: center;
+}
+
+.intro > .github > a > img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 290px;
+  left: 1670px;
+}
+
+.main > p {
+  color: #fff;
+  position: absolute;
+  top: 461px;
+  left: 542px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 .main > img {
   width: 720px;
   height: 2564.45px;
-  position: fixed;
+  position: absolute;
   top: 500px;
   left: 200px;
 }
