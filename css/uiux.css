@@ -19,6 +19,7 @@ a {
   height: 100px;
   background-color: #000;
   color: #fff;
+  z-index: 1;
 }
 
 .top .nav {
@@ -46,18 +47,17 @@ body {
 
 .content {
   width: 970px;
-  height: 559px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 1319px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .menu {
-  display: flex;
-  position: fixed;
-  left: 50%;
+  top: 300px;
+  position: absolute;
   transform: translateX(-50%);
+  left: 50%;
+  display: flex;
   gap: 92px;
 }
 
@@ -70,10 +70,11 @@ body {
 }
 
 .work {
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
-  margin-top: 74px;
+  top: 29.2592592593%;
 }
 
 .work > li > a > img {
