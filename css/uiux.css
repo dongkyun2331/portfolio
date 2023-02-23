@@ -19,6 +19,7 @@ a {
   height: 100px;
   background-color: #000;
   color: #fff;
+  z-index: 1;
 }
 
 .top .nav {
@@ -45,17 +46,19 @@ body {
 }
 
 .content {
-  width: 1920px;
-  height: 1620px;
-  margin: 0 auto;
-  position: relative;
+  width: 970px;
+  height: 559px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .menu {
   display: flex;
-  position: absolute;
-  top: 400px;
-  left: 765px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   gap: 92px;
 }
 
@@ -68,13 +71,10 @@ body {
 }
 
 .work {
-  position: absolute;
-  top: 474px;
-  left: 475px;
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
-  margin-top: 74px;
+  top: 29.2592592593%;
 }
 
 .work > li > a > img {
