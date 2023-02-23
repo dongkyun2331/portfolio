@@ -16,21 +16,28 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 100px;
+  height: 200px;
   background-color: #000;
   color: #fff;
   z-index: 1;
 }
 
 .top .nav {
-  float: right;
+  position: fixed;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .top .nav > ul {
   display: flex;
   gap: 50px;
-  margin-right: 50px;
-  margin-top: 33px;
+  list-style: none;
+}
+
+.top .nav > ul > li {
+  position: relative;
 }
 
 .top .nav > ul > li > a {
@@ -38,6 +45,26 @@ a {
 }
 
 .top .nav > ul > li > a:hover {
+  color: #ffb800;
+}
+
+.top .nav > ul > li::after {
+  content: '';
+  position: absolute;
+  background-color: #ffb800;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.top .nav > ul > li:hover::after {
+  width: 100%;
+}
+
+.top .nav > ul > li:nth-child(4) > a {
   border-bottom: 3px solid #ffb800;
 }
 
@@ -47,18 +74,17 @@ body {
 
 .content {
   width: 970px;
-  height: 559px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 1340px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .work {
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
-  top: 29.2592592593%;
+  top: 300px;
 }
 
 .work > li > a > img {
