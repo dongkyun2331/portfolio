@@ -44,6 +44,10 @@ a {
   color: #fff;
 }
 
+.top .nav > ul > li > a:hover {
+  color: #ffb800;
+}
+
 .top .nav > ul > li::after {
   content: '';
   position: absolute;

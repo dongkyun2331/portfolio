@@ -33,12 +33,35 @@ a {
   display: flex;
   gap: 50px;
 }
+.top .nav > ul > li {
+  position: relative;
+}
 
 .top .nav > ul > li > a {
   color: #fff;
 }
 
 .top .nav > ul > li > a:hover {
+  color: #ffb800;
+}
+
+.top .nav > ul > li::after {
+  content: '';
+  position: absolute;
+  background-color: #ffb800;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.top .nav > ul > li:hover::after {
+  width: 100%;
+}
+
+.top .nav > ul > li:nth-child(1) > a {
   border-bottom: 3px solid #ffb800;
 }
 
