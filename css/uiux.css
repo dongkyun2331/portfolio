@@ -45,19 +45,17 @@ body {
 }
 
 .content {
-  width: 970px;
-  height: 559px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 1920px;
+  height: 1620px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .menu {
   display: flex;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
+  position: absolute;
+  top: 400px;
+  left: 765px;
   gap: 92px;
 }
 
@@ -70,6 +68,9 @@ body {
 }
 
 .work {
+  position: absolute;
+  top: 474px;
+  left: 475px;
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
