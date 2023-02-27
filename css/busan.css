@@ -161,14 +161,27 @@ body {
   color: #fff;
   position: absolute;
   top: 311px;
-  left: 70.1%;
+  left: 50%;
+  transform: translateX(-50%);
   font-weight: 400;
   font-size: 16px;
 }
 
-.sub > img {
+.sub {
   width: 37.5%;
+  height: 100%;
   position: absolute;
-  top: 350px;
   left: 52.08%;
+}
+
+.sub1 {
+  width: 100%;
+  display: block;
+  margin-top: 350px;
+}
+
+.sub2 {
+  width: 100%;
+  display: block;
+  margin-top: 100px;
 }
