@@ -75,25 +75,28 @@ body {
 .back {
   position: fixed;
   top: 200px;
-  left: 50px;
+  /* left: 50px; */
+  left: 2.6%;
 }
 
 .content {
   position: relative;
-  width: 1920px;
-  height: 3264.45px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
 .content > .back > img {
-  width: 20px;
+  /* width: 20px; */
+  width: 1.04%;
   height: 20px;
 }
 
 .content > .intro > p {
   position: absolute;
   top: 250px;
-  left: 200px;
+  /* left: 200px; */
+  left: 10.41%;
   font-size: 16px;
   font-weight: 400;
   color: #fff;
@@ -102,15 +105,18 @@ body {
 .intro > .link {
   position: absolute;
   top: 290px;
-  left: 1470px;
-  width: 150px;
+  /* left: 1470px; */
+  left: 76.56%;
+  /* width: 150px; */
+  width: 7.81%;
   height: 50px;
   border-radius: 10px;
   background-color: #fff;
 }
 
 .intro > .link > a {
-  width: 150px;
+  /* width: 150px; */
+  width: 7.81%;
   height: 50px;
   display: block;
   font-size: 16px;
@@ -120,26 +126,32 @@ body {
 }
 
 .intro > .github > a > img {
-  width: 50px;
+  /* width: 50px; */
+  width: 2.6%;
   height: 50px;
   position: absolute;
   top: 290px;
-  left: 1670px;
+  /* left: 1670px; */
+  left: 86.97%;
 }
 
 .main > p {
   color: #fff;
   position: absolute;
   top: 461px;
-  left: 542px;
+  /* left: 542px; */
+  left: 28.22%;
   font-weight: 400;
   font-size: 16px;
 }
 
 .main > img {
-  width: 720px;
+  /* width: 720px; */
+  width: 37.5%;
   height: 2564.45px;
   position: absolute;
   top: 500px;
-  left: 200px;
+  /* left: 200px; */
+  left: 10.41%;
+  padding-bottom: 10.72%;
 }
