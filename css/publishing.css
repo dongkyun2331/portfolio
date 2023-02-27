@@ -14,19 +14,20 @@ a {
 
 .top {
   position: fixed;
-  position: relative;
   top: 0;
   width: 100%;
   height: 200px;
   background-color: #000;
   color: #fff;
+  z-index: 1;
 }
 
 .top .nav {
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 85px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .top .nav > ul {
