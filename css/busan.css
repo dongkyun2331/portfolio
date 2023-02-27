@@ -166,3 +166,9 @@ body {
   font-size: 16px;
 }
 
+.sub > img {
+  width: 37.5%;
+  position: absolute;
+  top: 350px;
+  left: 52.08%;
+}
