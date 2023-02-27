@@ -74,7 +74,7 @@ body {
 
 .content {
   width: 970px;
-  height: 1340px;
+  height: 1145px;
   margin: 0 auto;
   position: relative;
 }
@@ -84,7 +84,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
-  top: 300px;
+  top: 200px;
 }
 
 .work > li > a > img {

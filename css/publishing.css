@@ -73,18 +73,17 @@ body {
 
 .content {
   width: 970px;
-  height: 559px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 885px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .work {
   display: flex;
   flex-wrap: wrap;
   gap: 35px;
-  margin-top: 74px;
+  position: absolute;
+  top: 200px;
 }
 
 .work > li > a > img {
