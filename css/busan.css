@@ -156,3 +156,7 @@ body {
   left: 10.41%;
   padding-bottom: 10.72%;
 }
+
+.sub > p {
+  color: #fff;
+}
