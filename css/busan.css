@@ -159,4 +159,7 @@ body {
 
 .sub > p {
   color: #fff;
+  position: absolute;
+  top: 311px;
+  left: 52.08%;
 }
