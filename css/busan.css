@@ -88,13 +88,13 @@ body {
 
 .content > .back > img {
   /* width: 20px; */
-  width: 1.04%;
+  width: 20px;
   height: 20px;
 }
 
 .content > .intro > p {
   position: absolute;
-  top: 250px;
+  top: 200px;
   /* left: 200px; */
   left: 10.41%;
   font-size: 16px;
@@ -104,7 +104,7 @@ body {
 
 .intro > .link {
   position: absolute;
-  top: 290px;
+  top: 200px;
   /* left: 1470px; */
   left: 76.56%;
   /* width: 150px; */
@@ -148,9 +148,9 @@ body {
 .main > img {
   /* width: 720px; */
   width: 37.5%;
-  height: 2564.45px;
+  /* height: 2564.45px; */
   position: absolute;
-  top: 500px;
+  top: 350px;
   /* left: 200px; */
   left: 10.41%;
   padding-bottom: 10.72%;
