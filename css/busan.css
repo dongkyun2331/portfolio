@@ -112,11 +112,12 @@ body {
   height: 50px;
   border-radius: 10px;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .intro > .link > a {
   /* width: 150px; */
-  width: 7.81%;
+  /* width: 7.81%; */
   height: 50px;
   display: block;
   font-size: 16px;
@@ -128,9 +129,9 @@ body {
 .intro > .github > a > img {
   /* width: 50px; */
   width: 2.6%;
-  height: 50px;
+  /* height: 50px; */
   position: absolute;
-  top: 290px;
+  top: 200px;
   /* left: 1670px; */
   left: 86.97%;
 }
@@ -138,7 +139,7 @@ body {
 .main > p {
   color: #fff;
   position: absolute;
-  top: 461px;
+  top: 311px;
   /* left: 542px; */
   left: 28.22%;
   font-weight: 400;
