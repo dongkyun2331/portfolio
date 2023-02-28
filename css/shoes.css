@@ -77,3 +77,116 @@ body {
   top: 200px;
   left: 2.6%;
 }
+
+.back {
+  position: fixed;
+  top: 200px;
+  left: 2.6%;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.content > .back > img {
+  /* width: 20px; */
+  width: 20px;
+  height: 20px;
+}
+
+.content > .intro > p {
+  position: absolute;
+  top: 200px;
+  /* left: 200px; */
+  left: 10.41%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.intro > .link {
+  position: absolute;
+  top: 200px;
+  /* left: 1470px; */
+  left: 76.56%;
+  /* width: 150px; */
+  width: 7.81%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.intro > .link > a {
+  /* width: 150px; */
+  /* width: 7.81%; */
+  height: 50px;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: center;
+}
+
+.intro > .github > a > img {
+  /* width: 50px; */
+  width: 2.6%;
+  /* height: 50px; */
+  position: absolute;
+  top: 200px;
+  /* left: 1670px; */
+  left: 86.97%;
+}
+
+.main > p {
+  color: #fff;
+  position: absolute;
+  top: 311px;
+  /* left: 542px; */
+  left: 28.22%;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.main > img {
+  /* width: 720px; */
+  width: 37.5%;
+  /* height: 2564.45px; */
+  position: absolute;
+  top: 350px;
+  /* left: 200px; */
+  left: 10.41%;
+  padding-bottom: 10.72%;
+}
+
+.sub > p {
+  color: #fff;
+  position: absolute;
+  top: 311px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.sub {
+  width: 37.5%;
+  height: 100%;
+  position: absolute;
+  left: 52.08%;
+}
+
+.sub1 {
+  width: 100%;
+  display: block;
+  margin-top: 350px;
+}
+
+.sub2 {
+  width: 100%;
+  display: block;
+  margin-top: 100px;
+}
