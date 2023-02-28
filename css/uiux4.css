@@ -91,11 +91,11 @@
   }
   
   .main > img {
-    width: 55.41%;
+    width: 75%;
     position: absolute;
     top: 200px;
-    left: 22.29%;
-    padding-bottom: 17.18%;
+    left: 12.5%;
+    padding-bottom: 15.27%;
   }
 
   /* 스크롤바의 바탕과 스크롤 쓰개 */
