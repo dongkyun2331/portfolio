@@ -1,0 +1,373 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #f8f8f8;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.left {
+  width: 562px;
+  height: 562px;
+  border-radius: 562px;
+  background-color: #f0ba36;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.left_01 {
+  width: 592px;
+  height: 592px;
+  border-radius: 592px;
+  border: 5px solid #ffd917;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.right {
+  width: 562px;
+  height: 562px;
+  border-radius: 562px;
+  background-color: #f0ba36;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.right_01 {
+  width: 530px;
+  height: 530px;
+  border-radius: 530px;
+  border: 5px solid #ffd917;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.space {
+  width: 1400px;
+  height: 787px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  box-shadow: 10px 20px 92px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.space_text {
+  /* 스페이스. */
+
+  position: absolute;
+  height: 24px;
+  left: 103px;
+  top: 52px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.home {
+  /* 홈 */
+
+  position: absolute;
+  height: 17px;
+  left: 243px;
+  top: 57px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.products {
+  /* 제품 */
+
+  position: absolute;
+  height: 17px;
+  left: 319px;
+  top: 57px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.vector {
+  /* Vector */
+
+  position: absolute;
+  left: 25%;
+  right: 74.36%;
+  top: 8.01%;
+  bottom: 91.36%;
+}
+
+.job {
+  /* 채용정보 */
+
+  position: absolute;
+  height: 17px;
+  left: 394px;
+  top: 57px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.contact {
+  /* 컨택트 */
+
+  position: absolute;
+  height: 17px;
+  left: 482px;
+  top: 57px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.rectangle7 {
+  /* Rectangle 7 */
+
+  position: absolute;
+  width: 464px;
+  height: 510px;
+  left: 171px;
+  top: 143px;
+
+  background: url(../images/Rectangle\ 7.png), #f7f7f7;
+}
+
+.log_in {
+  /* 로그인 */
+
+  position: absolute;
+  height: 17px;
+  left: 1139px;
+  top: 56px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.rectangle2 {
+  /* Rectangle 2 */
+
+  position: absolute;
+  width: 88px;
+  height: 43px;
+  left: 1208px;
+  top: 43px;
+
+  background: #171a1f;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.sign_up {
+  /* 회원가입 */
+
+  position: absolute;
+  height: 17px;
+  left: 1226px;
+  top: 56px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+h1 {
+  /* 시작하기 */
+
+  position: absolute;
+  height: 44px;
+  left: 955px;
+  top: 143px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.we {
+  /* 우리는 우리의 상상력에 의해서만 제한됩니다 */
+
+  position: absolute;
+  height: 21px;
+  left: 870px;
+  top: 209px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #b5b5b5;
+}
+
+input {
+  padding: 23px;
+}
+
+.input_01 {
+  position: absolute;
+  width: 351px;
+  height: 65px;
+  left: 846px;
+  top: 257px;
+
+  background: #f3f3f3;
+  border-radius: 11px;
+}
+
+.input_02 {
+  position: absolute;
+  width: 351px;
+  height: 65px;
+  left: 846px;
+  top: 343px;
+
+  background: #f3f3f3;
+  border-radius: 11px;
+}
+
+.input_03 {
+  position: absolute;
+  width: 351px;
+  height: 65px;
+  left: 846px;
+  top: 429px;
+
+  background: #f3f3f3;
+  border-radius: 11px;
+}
+
+.rectangle6 {
+  /* Rectangle 6 */
+
+  position: absolute;
+  width: 351px;
+  height: 68px;
+  left: 846px;
+  top: 515px;
+
+  background: #ffd917;
+  box-shadow: 0px 0px 4px 5px rgba(253, 229, 102, 0.5);
+  border-radius: 11px;
+}
+
+.create {
+  /* 무료회원가입 */
+
+  position: absolute;
+  height: 21px;
+  left: 969px;
+  top: 539px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.by {
+  /* 가입함으로써 스페이스 개인정보 보호정책 및 서비스 약관에 동의합니다. */
+
+  position: absolute;
+  height: 16px;
+  left: 829px;
+  top: 604px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #c5c5c5;
+}
