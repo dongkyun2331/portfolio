@@ -135,7 +135,7 @@ body {
   font-size: 16px;
 }
 
-.main > img {
+.main > a > img {
   width: 37.5%;
   position: absolute;
   top: 350px;
