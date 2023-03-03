@@ -16,7 +16,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 200px;
+  height: 100px;
   background-color: #000;
   color: #fff;
   z-index: 1;
@@ -24,7 +24,7 @@ a {
 
 .top .nav {
   position: fixed;
-  top: 85px;
+  top: 38px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -69,7 +69,7 @@ a {
 }
 
 body {
-  background-color: #000;
+  background-color: #fff;
 }
 
 .content {

@@ -15,19 +15,20 @@ a {
 
 .top {
   position: fixed;
-  position: relative;
   top: 0;
   width: 100%;
-  height: 200px;
+  height: 100px;
   background-color: #000;
   color: #fff;
+  z-index: 1;
 }
 
 .top .nav {
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 38px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .top .nav > ul {
@@ -69,7 +70,7 @@ a {
 }
 
 body {
-  background-color: #000;
+  background-color: #fff;
 }
 
 .profile {
@@ -96,7 +97,7 @@ body {
 }
 
 .content .profile_text > h2 {
-  color: #fff;
+  color: #000;
   font-size: 24px;
   font-weight: 400;
   margin-right: 32px;
@@ -105,7 +106,7 @@ body {
 .content .profile_text > .line {
   width: 70px;
   height: 3px;
-  background-color: #fff;
+  background-color: #000;
   margin-top: 13px;
 }
 
@@ -119,8 +120,8 @@ body {
 .text {
   font-weight: 700;
   font-size: 16px;
-  line-height: 19px;
-  color: #fff;
+  line-height: 27px;
+  color: #000;
   margin-top: 25px;
 }
 
@@ -130,7 +131,7 @@ body {
 }
 
 .experience > h2 {
-  color: #fff;
+  color: #000;
   font-weight: 400;
   font-size: 24px;
   margin-right: 54px;
@@ -139,13 +140,13 @@ body {
 .experience > .line {
   width: 70px;
   height: 3px;
-  background-color: #fff;
+  background-color: #000;
   margin-top: 16px;
 }
 
 .experience_nav {
   height: 123px;
-  color: #fff;
+  color: #000;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -159,6 +160,6 @@ body {
 }
 
 .uni {
-  color: #fff;
+  color: #000;
   margin-top: 25px;
 }
