@@ -1,0 +1,914 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.title_all {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  z-index: 1;
+}
+/* position: fixed;를 사용하여 상단바가 따라 내려오게 하였습니다. */
+.title {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 1600px;
+  height: 70px;
+  z-index: 1;
+}
+
+.head {
+  background-color: #0050a0;
+  width: 182px;
+  height: 160px;
+  margin: 0 0 0 199px;
+}
+
+.head img {
+  width: 74px;
+  margin: 30px 0 0 55px;
+}
+/* margin으로 로고를 위치를 지정했습니다. */
+.head h1 {
+  color: #f3f7fb;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu ul {
+  display: flex;
+  padding: 24px 30px;
+}
+
+.menu ul li a {
+  margin: 35px;
+  color: #666666;
+}
+
+.lan {
+  display: flex;
+}
+
+.lan p {
+  margin-top: 24px;
+  color: #666666;
+}
+
+.lan .line {
+  border-right: 1px solid #666666;
+  margin-bottom: 115px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.lan img {
+  width: 33px;
+  height: 33px;
+  margin: 10px;
+}
+
+/* container */
+.background {
+  width: 1600px;
+  height: 786px;
+  margin: 0 auto;
+}
+
+.bul .bli {
+  width: 100%;
+  height: 786px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bul .bli_1 {
+  background-image: url(../images/img.png);
+}
+.bul .bli_2 {
+  background-image: url(../images/2030busan.jpg);
+}
+.bul .bli_3 {
+  background-image: url(../images/busantrip.jpg);
+}
+
+/* wbox_01 */
+.wbox_01 {
+  width: 1300px;
+  height: 74px;
+  background-color: #f6f7f9;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px hsl(0deg 0% 0% / 0.75);
+  position: relative;
+  overflow: hidden;
+  position: absolute;
+  top: 750px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wbox_01 .wbox_01ul {
+  position: relative;
+}
+
+.wbox_01ul .slick-dots li {
+  z-index: 1;
+  position: absolute;
+  left: -500px;
+}
+
+.wbox_01ul .wli {
+  line-height: 74px;
+  color: #000;
+  font-size: 26px;
+  margin-left: 44px;
+}
+
+.wbox_01 .p_2 {
+  color: #000;
+  font-size: 26px;
+  position: absolute;
+  top: 15px;
+  right: 44px;
+}
+
+.wbox_01 img {
+  width: 16px;
+  height: 16px;
+  margin: 0 1px;
+}
+
+/* conduct */
+.conduct {
+  width: 1300px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.conduct ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.conduct ul li {
+  width: 314px;
+  height: 372px;
+  border: 1px solid #e2e6e6;
+}
+
+.conduct ul li img {
+  width: 312px;
+}
+
+.conduct ul li .img:hover {
+  filter: brightness(0.7);
+}
+
+.conduct .trip {
+  position: relative;
+}
+
+.conduct .trip .layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.conduct .trip .circle {
+  width: 79px;
+  height: 79px;
+  border-radius: 79px;
+  background-color: #e14500;
+  position: absolute;
+  bottom: 74px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.conduct .trip .circle.circle_2 {
+  background-color: #215fd1;
+}
+
+.conduct .trip p {
+  /* 이달의 부산여행지 */
+  font-size: 26px;
+  color: #fff;
+  text-align: right;
+  position: absolute;
+  bottom: 26px;
+  right: 36px;
+}
+
+.conduct .conduct_01 {
+  position: relative;
+}
+
+.conduct .conduct_01 h2 {
+  margin-top: 14px;
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+.conduct .conduct_01 .button {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+
+.conduct .conduct_01 .button img {
+  width: 22px;
+}
+
+.conduct .conduct_01 .button p {
+  color: #a33100;
+  font-size: 16px;
+  margin-right: 18px;
+}
+
+.conduct_01 .img {
+  width: 314px;
+  height: 214px;
+}
+
+.slide {
+  width: 1301px;
+  height: 258px;
+  background-image: url(../images/Layer_08.png);
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+}
+
+.slide .ellipse {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 100px;
+  position: relative;
+}
+
+.slide .ellipse li {
+  width: 62px;
+  height: 62px;
+  border-radius: 62px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 62px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.slide .ellipse li:first-child {
+  position: absolute;
+  left: 10px;
+}
+
+.slide .ellipse li:last-child {
+  position: absolute;
+  right: 10px;
+}
+
+.slide .text_01 {
+  position: absolute;
+  top: 20px;
+  left: 220px;
+  font-size: 17px;
+  color: #e5b1aa;
+}
+
+.slide .text_big {
+  position: absolute;
+  top: 48px;
+  left: 132px;
+}
+
+.slide h2 {
+  color: #ecb5a9;
+  font-size: 40px;
+  position: absolute;
+  top: 40px;
+  right: 253px;
+}
+
+.slide .box {
+  width: 613px;
+  height: 80px;
+  background-color: #2b3291;
+  opacity: 70%;
+  position: absolute;
+  top: 98px;
+  right: 190px;
+  box-shadow: 5px 5px 5px #000101;
+}
+
+.slide .box p {
+  /* [인싸가 되고싶은 나라]티저를 보고 퀴즈를 맞춰주세요! */
+  /* 정답자 중 추첨을 통해 경품을 드립니다! */
+  font-size: 23px;
+  color: #f5f5fa;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.slide .box p span {
+  color: #68cbf6;
+}
+
+.slide .event {
+  font-size: 20px;
+  color: #fbfbfc;
+  font-weight: 700;
+  position: absolute;
+  bottom: 22px;
+  right: 344px;
+}
+
+.slide .event .date {
+  font-size: 30px;
+}
+
+.gray {
+  height: 389px;
+  background-color: #f7f7f7;
+  margin-top: 10px;
+}
+
+.gray .gray_contents {
+  width: 1300px;
+  height: 389px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.gray .gray_contents .number {
+  font-size: 40px;
+  color: #1f609b;
+  position: absolute;
+  top: 42px;
+}
+
+.gray .gray_contents .text {
+  font-size: 26px;
+  position: absolute;
+  top: 95px;
+}
+
+.gray .gray_contents .play {
+  position: absolute;
+  bottom: 118px;
+  font-size: 26px;
+  color: #6f6f6f;
+}
+
+.gray .gray_contents .play button {
+  border: none;
+  background-color: #f7f7f7;
+}
+
+.gray .gray_contents .photo {
+  position: absolute;
+  top: 40px;
+  left: 310px;
+  display: flex;
+}
+
+.gray .gray_contents .photo li {
+  width: 241px;
+  height: 309px;
+  background-color: #fff;
+  margin-right: 8px;
+  position: relative;
+}
+
+.gray .gray_contents .photo li p {
+  position: absolute;
+  top: 214px;
+  left: 18px;
+  font-size: 18px;
+  color: #313031;
+}
+
+.youtube {
+  width: 1300px;
+  margin: 0 auto;
+  margin-top: 78px;
+}
+
+.youtube ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.youtube ul li {
+  width: 318px;
+  height: 335px;
+  position: relative;
+}
+
+.youtube ul li .text {
+  font-size: 17px;
+  color: #666;
+  position: absolute;
+  top: 202px;
+}
+
+.youtube ul li .date {
+  font-size: 17px;
+  color: #666;
+  position: absolute;
+  bottom: 20px;
+}
+
+.youtube .add {
+  width: 210px;
+  height: 59px;
+  border: 1px solid #362f2d;
+  color: #362f2d;
+  font-size: 18px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 59px;
+}
+
+.weather {
+  width: 1300px;
+  margin: 0 auto;
+  margin-top: 106px;
+  position: relative;
+}
+
+.weather .blue {
+  width: 76px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: #356ed5;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 42px;
+}
+
+.weather .text {
+  font-size: 30px;
+  color: #356ed5;
+  font-weight: 700;
+}
+
+.weather ul {
+  position: absolute;
+  top: 0;
+  left: 169px;
+  display: flex;
+}
+
+.weather ul .content {
+  width: 134px;
+  height: 122px;
+  margin: 10px;
+  position: relative;
+}
+
+.weather ul li .title {
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+}
+
+.weather ul li .circle {
+  display: flex;
+  position: absolute;
+  top: 36px;
+  left: 0;
+}
+
+.weather ul li .circle li {
+  width: 17px;
+  height: 17px;
+  border-radius: 17px;
+  margin-right: 9px;
+}
+
+.weather ul li .circle .border_green {
+  border: 1px solid #3bbe69;
+}
+
+.weather ul li .circle .circle_yellow {
+  background-color: #ffc240;
+}
+
+.weather ul li .circle .border_pink {
+  border: 1px solid #ff9494;
+}
+
+.weather ul li .circle .circle_green {
+  background-color: #3bbe69;
+}
+
+.weather ul li .circle .border_yellow {
+  border: 1px solid #ffc240;
+}
+
+.weather ul .content .blue_01 {
+  position: absolute;
+  top: 68px;
+  left: 0;
+}
+
+.weather ul .content .blue_01 .box {
+  width: 34px;
+  height: 20px;
+  background-color: #2d72e1;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 6px;
+}
+
+.weather ul .content .blue_02 {
+  position: absolute;
+  top: 91px;
+  left: 0;
+}
+
+.weather ul .content .blue_02 .box2 {
+  width: 46px;
+  height: 20px;
+  background-color: #0a5099;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 6px;
+}
+
+.weather ul .content .box3 {
+  width: 34px;
+  height: 20px;
+  background-color: #0a5099;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 6px;
+}
+
+.blue {
+  background-image: url('../images/Shape.png');
+  background-repeat: no-repeat;
+  background-position: -404px -270px;
+  height: 371px;
+  background-color: #f7fbfe;
+  margin-top: 90px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.blue .blue_content {
+  width: 1300px;
+  height: 371px;
+  margin: 0 auto;
+}
+
+.blue_content .left {
+  float: left;
+  width: 300px;
+}
+
+.blue_content .left h2 {
+  font-size: 30px;
+  color: #000;
+  margin-top: 50px;
+  margin-bottom: 23px;
+}
+
+.blue_content .left p {
+  font-size: 16px;
+  color: #000;
+}
+
+.blue_content .left button {
+  font-size: 16px;
+  color: #053e89;
+  width: 70px;
+  height: 33px;
+  border: 1px solid #053e89;
+  margin-top: 12px;
+  background-color: transparent;
+}
+
+.blue_content .right {
+  float: right;
+  width: calc(100% - 300px);
+}
+
+.blue_content ul {
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.blue_content ul li:first-child a {
+  padding-top: 0;
+}
+
+.blue_content ul li a {
+  display: block;
+  padding: 20px 11px;
+  font-size: 17px;
+  color: black;
+  border-bottom: 1px solid #dedede;
+}
+
+.blue_content ul li span {
+  float: right;
+}
+
+.icon {
+  display: flex;
+  margin: 0 auto;
+  width: 1300px;
+  margin-bottom: 50px;
+}
+
+.icon li {
+  width: 207px;
+  height: 121px;
+  border-right: 1px solid #ededed;
+  text-align: center;
+}
+
+.icon li:last-child {
+  border-right: none;
+}
+
+.icon li .img {
+  width: 207px;
+  height: 104px;
+}
+
+.icon li img {
+  margin: 0 auto;
+  display: block;
+}
+
+.footer_top {
+  width: 100%;
+  height: 569px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/gwangan.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer_top .center_box {
+  width: 1100px;
+  height: 569px;
+  margin: 0 auto;
+}
+
+.footer_top .top_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 48px;
+}
+
+.footer_top .top_title img {
+  width: 30px;
+  height: 26px;
+}
+
+.footer_top .top_title p {
+  font-size: 17px;
+  color: #fff;
+  margin-left: 9px;
+}
+
+.footer_top .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 29px;
+}
+
+.footer_top .icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer_top .menus {
+  display: flex;
+  margin-top: 52px;
+}
+
+.footer_top .menus li {
+  font-size: 20px;
+  color: #fff;
+  width: 323px;
+}
+
+.footer_top .menus > li > ul {
+  display: inline-block;
+  padding-top: 30px;
+}
+
+.footer {
+  width: 100%;
+  height: 262px;
+  background-color: #161616;
+}
+
+.footer_content {
+  width: 1200px;
+  height: 262px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer_content .footer_title {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.footer_content .footer_icon {
+  position: absolute;
+  top: 30px;
+  right: 250px;
+  display: flex;
+  gap: 25px;
+}
+
+.footer_content ul li {
+  font-size: 26px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.footer_content p {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  top: 40px;
+  right: 125px;
+}
+
+.footer_content .f_line {
+  height: 1px;
+  width: 10px;
+  background-color: #8b8b8b;
+  position: absolute;
+  top: 55px;
+  right: 103px;
+}
+
+.footer_content .n1330 {
+  font-size: 40px;
+  color: #f30099;
+  font-weight: 700;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.footer_content .f_box {
+  width: 1000px;
+  height: 60px;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 90px;
+}
+
+.footer_content .f_box ul {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 50px;
+  gap: 25px;
+}
+
+.footer_content .f_box ul li {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer_content .f_box ul li:first-child {
+  color: #4290d8;
+}
+
+.footer_content .f_box2 {
+  width: 201px;
+  height: 60px;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  display: flex;
+}
+
+.f_box2 .f_box2_p {
+  color: #fff;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.f_box2 .f_box2_p2 {
+  color: #fff;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.footer_content .copyright_top {
+  font-size: 13px;
+  color: #bababa;
+  position: absolute;
+  bottom: 70px;
+  display: flex;
+}
+
+.copyright_top .address {
+  margin-right: 10px;
+  padding-right: 14px;
+  position: relative;
+}
+
+.copyright_top .address:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.4);
+  right: 0;
+  top: 3px;
+}
+
+.copyright_top .tel {
+  margin-right: 10px;
+  padding-right: 14px;
+  position: relative;
+}
+
+.copyright_top .tel:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.4);
+  right: 0;
+  top: 3px;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #bababa;
+  position: absolute;
+  bottom: 48px;
+}
+
+.top {
+  position: fixed;
+  right: 5%;
+  bottom: 2%;
+  width: 74px;
+  height: 74px;
+  background: url(../images/TOP.png);
+  background-repeat: no-repeat;
+}
