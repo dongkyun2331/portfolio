@@ -140,6 +140,7 @@ body {
 }
 
 .intro > .link > a {
+  color: #000;
   height: 50px;
   display: block;
   font-size: 16px;
