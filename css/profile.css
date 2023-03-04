@@ -111,6 +111,23 @@ body {
   font-size: 24px;
   font-weight: 400;
   margin-right: 32px;
+  text-shadow: 0 0 1rem #fff,
+               0 0 2rem #fff,
+               0 0 3rem #fff,
+               0 0 4rem #0ff,
+               0 0 7rem #0ff,
+               0 0 8rem #0ff,
+               0 0 10rem #0ff;
+  animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
 .content .profile_text > .line {
@@ -145,6 +162,14 @@ body {
   font-weight: 400;
   font-size: 24px;
   margin-right: 54px;
+  text-shadow: 0 0 1rem #fff,
+               0 0 2rem #fff,
+               0 0 3rem #fff,
+               0 0 4rem #0ff,
+               0 0 7rem #0ff,
+               0 0 8rem #0ff,
+               0 0 10rem #0ff;
+  animation: flicker 2s infinite;
 }
 
 .experience > .line {
