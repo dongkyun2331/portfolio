@@ -209,7 +209,7 @@ ul {
   text-align: center;
   opacity: 0;
   transform: translateY(100%);
-  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .btn-link {
@@ -229,7 +229,7 @@ ul {
   font-weight: 600;
   display: inline-block;
   opacity: 0;
-  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame3 {
@@ -245,12 +245,14 @@ ul {
   /* 크리에이터를 위한 제페토. */
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%,100%);
   top: 81px;
   font-weight: 600;
   font-size: 40px;
   letter-spacing: 0.03em;
   color: #000000;
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame3_p {

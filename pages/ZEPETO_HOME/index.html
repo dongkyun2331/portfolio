@@ -355,6 +355,16 @@
   setTimeout(function() {
     $(".btn-link").css("opacity", "1").css("transform", "translate(-50%,0%)");
   },400);
+  $(window).on("scroll", function(){
+    var windowHeight = $(window).height();
+    var scrollHeight = $(document).scrollTop();
+    $(".Frame3_title").each(function(){
+      var elementPosition = $(this).offset().top;
+      if (scrollHeight > elementPosition - windowHeight) {
+        $(this).css("opacity","1").css("transform","translate(-50%,0%)");
+      }
+    });
+  });
 });
 
     </script>
