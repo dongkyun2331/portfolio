@@ -91,15 +91,11 @@ body {
   width: 1020px;
   height: 457.88px;
   display: flex;
-  overflow: hidden;
 }
 
 .profile > img {
   width: 378.81px;
   height: 457.88px;
-  margin-top: auto;
-  margin-bottom: auto;
-  transform: translateY(100%);
 }
 
 .content {
