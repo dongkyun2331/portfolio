@@ -7,6 +7,14 @@
     <title>임동균 PORTFOLIO</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script>
+      $(document).ready(function() {
+  $(".hello").addClass("typing").delay(3500).queue(function(next) {
+    $(this).removeClass("typing");
+    next();
+  });
+});
+    </script>
   </head>
   <body>
     <div class="top">
