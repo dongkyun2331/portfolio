@@ -259,7 +259,7 @@ ul {
   /* 제페토 크리에이터는 제페토 세상의 모든 것을 직접 만들 수 있습니다. 전 세계 3억 유저에게 당신의 아이디어를 보여주세요! */
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%,100%);
   /* left: 308px; */
   top: 142px;
   font-weight: 500;
@@ -268,6 +268,8 @@ ul {
   text-align: center;
   letter-spacing: 0.01em;
   color: #6b6b6f;
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame3_img {
