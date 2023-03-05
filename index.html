@@ -41,5 +41,12 @@
         <li><img src="./images/jquery.png" alt="" /></li>
       </ul>
     </div>
+    <script>
+      window.addEventListener('scroll', function () {
+  console.log(window.scrollY)
+  const menu = document.querySelector('.top')
+  menu.classList.toggle('sticky', window.scrollY > 50)
+})
+    </script>
   </body>
 </html>

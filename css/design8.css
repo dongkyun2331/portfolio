@@ -22,6 +22,11 @@ a {
   z-index: 1;
 }
 
+.top.sticky {
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+
 .top .nav {
   position: fixed;
   top: 85px;
