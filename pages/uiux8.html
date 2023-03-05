@@ -30,5 +30,12 @@
         <img src="../images/uiux8_3.png" alt="" class="img3"/>
       </div>
     </div>
+    <script>
+      window.addEventListener('scroll', function () {
+  console.log(window.scrollY)
+  const menu = document.querySelector('.top')
+  menu.classList.toggle('sticky', window.scrollY > 50)
+})
+    </script>
   </body>
 </html>

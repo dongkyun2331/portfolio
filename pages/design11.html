@@ -28,5 +28,12 @@
         <img src="../images/design11.png" alt="" />
       </div>
     </div>
+    <script>
+      window.addEventListener('scroll', function () {
+  console.log(window.scrollY)
+  const menu = document.querySelector('.top')
+  menu.classList.toggle('sticky', window.scrollY > 50)
+})
+    </script>
   </body>
 </html>
