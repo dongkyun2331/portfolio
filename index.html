@@ -7,6 +7,7 @@
     <title>임동균 PORTFOLIO</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script>
       $(document).ready(function() {
   $(".hello").addClass("typing").delay(3500).queue(function(next) {
@@ -46,6 +47,12 @@
   console.log(window.scrollY)
   const menu = document.querySelector('.top')
   menu.classList.toggle('sticky', window.scrollY > 50)
+})
+$(document).ready(function() {
+  $(".profile").css("opacity", "1").css("transform", "translateY(0%)");
+  setTimeout(function() {
+    $(".home > ul").css("opacity", "1").css("transform", "translateY(0%)");
+  },1000);
 })
     </script>
   </body>
