@@ -66,12 +66,12 @@
           전 세계 3억 유저에게 당신의 아이디어를 보여주세요!
         </div>
         <img src="./images/image 2.png" alt="" class="Frame3_img" />
-        <div class="Frame3_t1">6800만</div>
-        <div class="Frame3_p1">스튜디오 아이템 판매량</div>
-        <div class="Frame3_t2">230만</div>
-        <div class="Frame3_p2">스튜디오 크리에이터 수</div>
-        <div class="Frame3_t3">3억</div>
-        <div class="Frame3_p3">제페토 가입자 수</div>
+        <div class="Frame3_t1 Frame3_text">6800만</div>
+        <div class="Frame3_p1 Frame3_text">스튜디오 아이템 판매량</div>
+        <div class="Frame3_t2 Frame3_text">230만</div>
+        <div class="Frame3_p2 Frame3_text">스튜디오 크리에이터 수</div>
+        <div class="Frame3_t3 Frame3_text">3억</div>
+        <div class="Frame3_p3 Frame3_text">제페토 가입자 수</div>
       </div>
       <div class="Frame4">
         <div class="Frame4_box">
@@ -384,6 +384,18 @@
         }
       });
     });
+    setTimeout(function(){
+    $(window).on("scroll", function(){
+      var windowHeight = $(window).height();
+      var scrollHeight = $(document).scrollTop();
+      $(".Frame3_text").each(function(){
+        var elementPosition = $(this).offset().top;
+        if (scrollHeight > elementPosition - windowHeight) {
+          $(this).css("opacity","1").css("transform","translateY(0%)");
+        }
+      });
+    });
+  },1000)
       }
     });
   });
