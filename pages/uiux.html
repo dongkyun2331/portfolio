@@ -11,6 +11,7 @@
     <title>UI/UX</title>
     <link rel="stylesheet" href="../css/uiux.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   </head>
   <body>
     <div class="top">
@@ -60,6 +61,9 @@
   console.log(window.scrollY)
   const menu = document.querySelector('.top')
   menu.classList.toggle('sticky', window.scrollY > 50)
+})
+$(document).ready(function() {
+  $(".work").css("opacity", "1").css("transform", "translateY(0%)");
 })
     </script>
   </body>
