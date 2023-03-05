@@ -7,11 +7,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-
     <title>UI/UX</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="../css/uiux.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   </head>
   <body>
     <div class="top">
@@ -25,34 +25,38 @@
         </ul>
       </div>
     </div>
+    <div class="dimm">
+      <img src="" alt="">
+    </div>
     <div class="content">
       <ul class="work">
         <li>
-          <a href="./uiux1.html"><img src="../images/uiux_1.png" alt="" /></a>
+          <img src="../images/uiux_1.png" data-img="../images/uiux1.png" alt="" />
         </li>
         <li>
-          <a href="./uiux2.html"><img src="../images/uiux_2.png" alt="" /></a>
+          <img src="../images/uiux_2.png" data-img="../images/uiux2.png" 
+          alt="" />
         </li>
         <li>
-          <a href="./uiux3.html"><img src="../images/uiux_3.png" alt="" /></a>
+          <img src="../images/uiux_3.png" data-img="../images/uiux3.png" alt="" />
         </li>
         <li>
-          <a href="./uiux4.html"><img src="../images/uiux_4.png" alt="" /></a>
+          <img src="../images/uiux_4.png" data-img="../images/uiux4.png" alt="" />
         </li>
         <li>
-          <a href="./uiux5.html"><img src="../images/uiux_5.png" alt="" /></a>
+          <img src="../images/uiux_5.png" data-img="../images/uiux5.png" alt="" />
         </li>
         <li>
-          <a href="./uiux6.html"><img src="../images/uiux_6.png" alt="" /></a>
+          <img src="../images/uiux_6.png" data-img="../images/uiux6.png"alt="" />
         </li>
         <li>
-          <a href="./uiux7.html"><img src="../images/uiux_7.png" alt="" /></a>
+          <img src="../images/uiux_7.png" data-img="../images/uiux7.png"alt="" />
         </li>
         <li>
-          <a href="./uiux8.html"><img src="../images/uiux_8.png" alt="" /></a>
+          <img src="../images/uiux_8.png" data-img="../images/uiux8.png"alt="" />
         </li>
         <li>
-          <a href="./uiux9.html"><img src="../images/uiux_9.png" alt="" /></a>
+          <img src="../images/uiux_9.png" data-img="../images/uiux9.png"alt="" />
         </li>
       </ul>
     </div>
@@ -65,6 +69,21 @@
 $(document).ready(function() {
   $(".work").css("opacity", "1").css("transform", "translateY(0%)");
 })
+    </script>
+    <script>
+      var item = $('.work li')
+      var dimm = $('.dimm')
+
+      item.click(function () {
+        var dataImg = $(this).find('img').attr('data-img')
+
+        dimm.addClass('show')
+        dimm.find('img').attr('src', dataImg)
+
+        dimm.click(function () {
+          $(this).removeClass('show')
+        })
+      })
     </script>
   </body>
 </html>
