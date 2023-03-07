@@ -18,8 +18,13 @@
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <link rel="icon" type="image/png" sizes="32x
-    " href="https://studio.zepeto.me/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x
+    "
+      href="https://studio.zepeto.me/favicon-32x32.png"
+    />
   </head>
   <body>
     <div class="Desktop-1">
@@ -80,36 +85,36 @@
             아이템, 월드, 라이브까지.<br />
             제페토는 크리에이터가 아이디어를 펼칠 수 있는 최고의 플랫폼입니다.
           </div>
-          <div class="Frame4_r1"></div>
-          <img src="./images/icon1.png" alt="" class="Frame4_icon1" />
-          <div class="Frame4_t1">아이템</div>
-          <div class="Frame4_p1">
-            패션 아이템을 만들고<br />
-            수익을 창출하세요.
-          </div>
-          <div class="Frame4_re1"></div>
-          <div class="Frame4_rp1">더 알아보기</div>
-
-          <div class="Frame4_r2"></div>
-          <img src="./images/icon2.png" alt="" class="Frame4_icon2" />
-          <div class="Frame4_t2">월드</div>
-          <div class="Frame4_p2">
-            제페토 세상에<br />
-            내 아이디어가 담긴<br />
-            월드를 만드세요.
-          </div>
-          <div class="Frame4_re2"></div>
-          <div class="Frame4_rp2">더 알아보기</div>
-
-          <div class="Frame4_r3"></div>
-          <img src="./images/icon3.png" alt="" class="Frame4_icon3" />
-          <div class="Frame4_t3">라이브</div>
-          <div class="Frame4_p3">
-            전 세계 유저들과<br />
-            실시간 방송하세요.
-          </div>
-          <div class="Frame4_re3"></div>
-          <div class="Frame4_rp3">더 알아보기</div>
+          <ul>
+            <li>
+              <img src="./images/icon1.png" alt="" />
+              <h2>아이템</h2>
+              <p>
+                패션 아이템을 만들고<br />
+                수익을 창출하세요.
+              </p>
+              <button>더 알아보기</button>
+            </li>
+            <li>
+              <img src="./images/icon2.png" alt="" />
+              <h2>월드</h2>
+              <p>
+                제페토 세상에<br />
+                내 아이디어가 담긴<br />
+                월드를 만드세요.
+              </p>
+              <button>더 알아보기</button>
+            </li>
+            <li>
+              <img src="./images/icon3.png" alt="" />
+              <h2>라이브</h2>
+              <p>
+                전 세계 유저들과<br />
+                실시간 방송하세요.
+              </p>
+              <button>더 알아보기</button>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="Frame5">
@@ -325,82 +330,6 @@
       </div>
     </div>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-      $('.bul').slick({
-        autoplay: true,
-        centerMode: true,
-        adaptiveHeight: true,
-        draggable: true,
-        slidesToShow: 5,
-      })
-
-      // const boxes = document.querySelectorAll('.Frame2_title')
-
-      // function checkBoxes() {
-      //   const triggerBottom = window.innerHeight * 1
-
-      //   boxes.forEach((box) => {
-      //     const boxTop = box.getBoundingClientRect().top
-
-      //     if (boxTop < triggerBottom) {
-      //       box.style.opacity = 1
-      //     }
-      //   })
-      // }
-
-      // window.addEventListener('scroll', checkBoxes)
-
-      $(document).ready(function() {
-  $(".Frame2_title").css("opacity", "1").css("transform", "translateY(0%)");
-  setTimeout(function() {
-    $(".btn-link").css("opacity", "1").css("transform", "translate(-50%,0%)");
-  },400);
-  $(window).on("scroll", function(){
-    var windowHeight = $(window).height();
-    var scrollHeight = $(document).scrollTop();
-    $(".Frame3_title").each(function(){
-      var elementPosition = $(this).offset().top;
-      if (scrollHeight > elementPosition - windowHeight) {
-        $(this).css("opacity","1").css("transform","translate(-50%,0%)");
-        setTimeout(function(){
-    $(window).on("scroll", function(){
-      var windowHeight = $(window).height();
-      var scrollHeight = $(document).scrollTop();
-      $(".Frame3_p").each(function(){
-        var elementPosition = $(this).offset().top;
-        if (scrollHeight > elementPosition - windowHeight) {
-          $(this).css("opacity","1").css("transform","translate(-50%,0%)");
-        }
-      });
-    });
-  },400)
-    $(window).on("scroll", function(){
-      var windowHeight = $(window).height();
-      var scrollHeight = $(document).scrollTop();
-      $(".Frame3_img").each(function(){
-        var elementPosition = $(this).offset().top;
-        if (scrollHeight > elementPosition - windowHeight) {
-          $(this).css("opacity","1").css("transform","translate(-50%,0%)");
-        }
-      });
-    });
-    setTimeout(function(){
-    $(window).on("scroll", function(){
-      var windowHeight = $(window).height();
-      var scrollHeight = $(document).scrollTop();
-      $(".Frame3_text").each(function(){
-        var elementPosition = $(this).offset().top;
-        if (scrollHeight > elementPosition - windowHeight) {
-          $(this).css("opacity","1").css("transform","translateY(0%)");
-        }
-      });
-    });
-  },1000)
-      }
-    });
-  });
-});
-
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
