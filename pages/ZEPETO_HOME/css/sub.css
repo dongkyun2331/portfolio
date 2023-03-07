@@ -235,6 +235,9 @@ ul {
   color: #fefdff;
   font-weight: 400;
   font-size: 15px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame2_ul {
@@ -244,6 +247,9 @@ ul {
   display: flex;
   gap: 22px;
   flex-wrap: wrap;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame2_li {
@@ -291,6 +297,9 @@ ul {
   font-weight: 600;
   font-size: 40px;
   color: #000;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame3_ul {
@@ -299,6 +308,9 @@ ul {
   left: 203px;
   display: flex;
   flex-wrap: wrap;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame3_li {
@@ -333,6 +345,9 @@ ul {
   position: absolute;
   top: 381px;
   left: 141px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame4 {
