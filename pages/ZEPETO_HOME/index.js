@@ -198,6 +198,18 @@ $(document).ready(function () {
             })
           })
         }, 500)
+        setTimeout(function () {
+          $(window).on('scroll', function () {
+            var windowHeight = $(window).height()
+            var scrollHeight = $(document).scrollTop()
+            $('.Frame7_rg').each(function () {
+              var elementPosition = $(this).offset().top
+              if (scrollHeight > elementPosition - windowHeight) {
+                $(this).css('opacity', '1').css('transform', 'translateY(0%)')
+              }
+            })
+          })
+        }, 500)
       }
     })
   })

@@ -667,44 +667,43 @@ body {
   top: 301px;
   background: #f8f8fa;
   border-radius: 10px;
+  display: flex;
+  position: relative;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
-.Frame7_e1 {
-  position: absolute;
+.Frame7_rg > li {
+  width: 266.6px;
+  height: 195px;
+  text-align: center;
+}
+
+.Frame7_rg > li > .number {
+  margin-top: 39px;
+  margin-left: 122px;
   width: 27px;
   height: 27px;
   border-radius: 27px;
-  left: 263px;
-  top: 340px;
   background: #f0f0f0;
-}
-
-.Frame7_n1 {
-  /* 1 */
-  position: absolute;
-  left: 273px;
-  top: 345px;
   font-weight: 500;
   font-size: 15px;
   color: #000000;
+  text-align: center;
+  line-height: 27px;
 }
 
-.Frame7_t1 {
-  /* 제페토 스튜디오 가입하기 */
-  position: absolute;
-  left: 190px;
-  top: 383px;
+.Frame7_rg > li > h2 {
+  margin-top: 20px;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.02em;
   color: #000000;
 }
 
-.Frame7_p1 {
-  /* 제페토 계정만 있다면 누구나 무료로 가 입할 수 있습니다. */
-  position: absolute;
-  left: 181px;
-  top: 411px;
+.Frame7_rg > li > p {
+  margin-top: 9px;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -715,110 +714,18 @@ body {
 
 .Frame7_v1 {
   position: absolute;
-  left: 37.62%;
-  right: 61.65%;
-  top: 404px;
-  bottom: 27.73%;
+  top: 103px;
+  left: 266px;
   width: 8px;
   height: 13px;
-}
-
-.Frame7_e2 {
-  position: absolute;
-  width: 27px;
-  height: 27px;
-  border-radius: 27px;
-  left: 527px;
-  top: 340px;
-  background: #f0f0f0;
-}
-
-.Frame7_n2 {
-  /* 2 */
-  position: absolute;
-  left: 536px;
-  top: 345px;
-  font-weight: 500;
-  font-size: 15px;
-  color: #000000;
-}
-
-.Frame7_t2 {
-  /* 콘텐츠 제작 */
-  position: absolute;
-  left: 501px;
-  top: 383px;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  color: #000000;
-}
-
-.Frame7_p2 {
-  /* 제작에 필요한 모든 가이드를 제공합니 다. 지금 바로 시작하세요. */
-  position: absolute;
-  left: 445px;
-  top: 411px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
-  letter-spacing: 0.01em;
-  color: #55555a;
 }
 
 .Frame7_v2 {
   position: absolute;
-  left: 62.01%;
-  right: 37.25%;
-  top: 70.02%;
-  bottom: 27.73%;
+  top: 103px;
+  left: 530px;
   width: 8px;
   height: 13px;
-}
-
-.Frame7_e3 {
-  position: absolute;
-  width: 27px;
-  height: 27px;
-  border-radius: 27px;
-  left: 791px;
-  top: 340px;
-  background: #f0f0f0;
-}
-
-.Frame7_n3 {
-  /* 3 */
-  position: absolute;
-  left: 800px;
-  top: 345px;
-  font-weight: 500;
-  font-size: 15px;
-  color: #000000;
-}
-
-.Frame7_t3 {
-  /* 콘텐츠 심사 */
-  position: absolute;
-  left: 765px;
-  top: 383px;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  color: #000000;
-}
-
-.Frame7_p3 {
-  /* 제페토 유저들이 안전하고 즐겁게 즐길 수 있도록 심사를 거친 후 공개됩니다. 바 로 시작하세요. */
-  position: absolute;
-  left: 700px;
-  top: 411px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
-  letter-spacing: 0.01em;
-  color: #55555a;
 }
 
 .Frame8 {
