@@ -13,26 +13,25 @@ a {
 }
 
 .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   width: 100%;
   height: 100px;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
   z-index: 1;
-  transition: height 0.6s;
+  transition: height 0.3, background-color 0.3s;
 }
 
 .top.sticky {
   height: 70px;
-  background-color: rgba(0, 0, 0, 0.92);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
 }
 
 .top .nav {
-  position: fixed;
-  top: 38px;
-  left: 50%;
-  transform: translateX(-50%);
   z-index: 1;
 }
 
@@ -47,7 +46,8 @@ a {
 }
 
 .top .nav > ul > li > a {
-  color: #fff;
+  color: #000;
+  line-height: 100px;
 }
 
 .top .nav > ul > li > a:hover {
@@ -59,7 +59,7 @@ a {
   position: absolute;
   background-color: #ffb800;
   left: 0;
-  bottom: -5px;
+  bottom: 15px;
   width: 0;
   height: 3px;
   transition: 0.3s;
@@ -71,15 +71,13 @@ a {
 }
 
 .top .nav > ul > li:nth-child(3)::after {
-  /* border-bottom: 3px solid #ffb800; */
   content: '';
   position: absolute;
   background-color: #ffb800;
   left: 0;
-  bottom: -5px;
+  bottom: 15px;
   width: 100%;
   height: 3px;
-  /* transition: 0.3s; */
   z-index: 1;
 }
 
@@ -118,6 +116,9 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #000;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .intro > .link {
@@ -130,6 +131,9 @@ body {
   background-color: #fff;
   border: 1px solid #000;
   overflow: hidden;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .intro > .link:hover {
@@ -171,6 +175,9 @@ body {
   position: absolute;
   top: 200px;
   left: 86.97%;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .main > p {
@@ -180,6 +187,9 @@ body {
   left: 28.22%;
   font-weight: 400;
   font-size: 16px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .main > a > img {
@@ -198,6 +208,9 @@ body {
   transform: translateX(-50%);
   font-weight: 400;
   font-size: 16px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .sub {
