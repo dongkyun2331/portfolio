@@ -480,6 +480,9 @@ body {
   letter-spacing: 0.02em;
   color: #000000;
   margin-top: 83px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame5_p {
@@ -490,6 +493,9 @@ body {
   letter-spacing: 0.01em;
   color: #55555a;
   margin-top: 11px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .bul_box {
@@ -506,13 +512,15 @@ body {
 .bul {
   margin: 0 auto;
   margin: 100px 0;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .bul .item > img {
   width: 100%;
   transform: scale(0.8);
   transition: 0.5s;
-  /* margin: 0 40px; */
 }
 
 .slick-list {
@@ -569,6 +577,9 @@ body {
   font-size: 40px;
   letter-spacing: 0.02em;
   color: #000000;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame6_p {
@@ -581,17 +592,17 @@ body {
   letter-spacing: 0.01em;
   color: #55555a;
   z-index: 1;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame6_video {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
   bottom: 0;
+  transform: translateX(-50%);
   -webkit-mask-image: -webkit-radial-gradient(white, black);
-  /* Create a circular mask with a gradient that goes from white to black */
-  /* mask-image: radial-gradient(circle, white, black); */
-  /* mask: radial-gradient(circle, white 0%, black 100%); */
 }
 
 .Frame7 {
@@ -612,6 +623,9 @@ body {
   font-size: 40px;
   letter-spacing: 0.02em;
   color: #000000;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame7_p {
@@ -625,9 +639,12 @@ body {
   text-align: center;
   letter-spacing: 0.01em;
   color: #55555a;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
-.Frame7_r {
+.Frame7 > button {
   position: absolute;
   width: 100px;
   height: 39px;
@@ -635,17 +652,11 @@ body {
   top: 209px;
   background: #5c46ff;
   border-radius: 19.5px;
-}
-
-.Frame7_rp {
-  /* 시작하기 */
-  position: absolute;
-  left: 513px;
-  top: 220px;
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 0.01em;
-  color: #ffffff;
+  border: none;
+  color: #fff;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame7_rg {
