@@ -381,10 +381,20 @@ body {
   margin-top: 10px;
 }
 
-.gray .gray_contents {
+.gray_slick {
   width: 1300px;
   height: 389px;
   margin: 0 auto;
+}
+
+.gray_all {
+  width: 1300px;
+  height: 389px;
+}
+
+.gray .gray_contents {
+  width: 1300px;
+  height: 389px;
   position: relative;
 }
 
