@@ -61,5 +61,22 @@
   menu.classList.toggle('sticky', window.scrollY > 50)
 })
     </script>
+    <script>
+      $(document).ready(function () {
+  $('.content > .intro > p').css('opacity', '1').css('transform', 'translateY(0%)')
+  setTimeout(function () {
+    $('.intro > .link').css('opacity', '1').css('transform', 'translate(-50%,0%)')
+  }, 300)
+  setTimeout(function () {
+    $('.intro > .github > a > img').css('opacity', '1').css('transform', 'translate(-50%,0%)')
+  }, 600)
+  setTimeout(function () {
+    $('.main > p').css('opacity', '1').css('transform', 'translate(-50%,0%)')
+  }, 600)
+  setTimeout(function () {
+    $('.sub > p').css('opacity', '1').css('transform', 'translate(-50%,0%)')
+  }, 600)
+})
+    </script>
   </body>
 </html>

@@ -110,6 +110,9 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #000;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .intro > .link {
@@ -122,6 +125,9 @@ body {
   background-color: #fff;
   border: 1px solid #000;
   overflow: hidden;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .intro > .link:hover {
@@ -163,6 +169,9 @@ body {
   position: absolute;
   top: 200px;
   left: 86.97%;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .main > p {
@@ -172,6 +181,9 @@ body {
   left: 28.22%;
   font-weight: 400;
   font-size: 16px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .main > a > img {
@@ -190,6 +202,9 @@ body {
   transform: translateX(-50%);
   font-weight: 400;
   font-size: 16px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .sub {
