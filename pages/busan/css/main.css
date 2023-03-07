@@ -271,6 +271,14 @@ body {
   height: 258px;
 }
 
+.right2 {
+  cursor: pointer;
+}
+
+.left2 {
+  cursor: pointer;
+}
+
 .slide {
   width: 1301px;
   height: 258px;
