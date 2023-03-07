@@ -16,6 +16,11 @@ $(document).ready(function () {
     draggable: false,
   })
 
+  $('.slide_slick').slick({
+    nextArrow: $('.right2'),
+    prevArrow: $('.left2'),
+  })
+
   $('.right').click(function () {
     $('.wbox_01ul').slick('slickNext')
     $('.bul').slick('slickNext')
