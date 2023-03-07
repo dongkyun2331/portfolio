@@ -9,9 +9,17 @@
     />
     <title>UI/UX</title>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
     <link rel="stylesheet" href="../css/uiux.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
   </head>
   <body>
     <div class="top">
@@ -25,63 +33,70 @@
         </ul>
       </div>
     </div>
-    <div class="dimm">
-      <img src="" alt="">
-    </div>
-    <div class="content">
-      <ul class="work">
-        <li>
-          <img src="../images/uiux_1.png" data-img="../images/uiux1.png" alt="" />
-        </li>
-        <li>
-          <img src="../images/uiux_2.png" data-img="../images/uiux2.png" 
-          alt="" />
-        </li>
-        <li>
-          <img src="../images/uiux_3.png" data-img="../images/uiux3.png" alt="" />
-        </li>
-        <li>
-          <img src="../images/uiux_4.png" data-img="../images/uiux4.png" alt="" />
-        </li>
-        <li>
-          <img src="../images/uiux_5.png" data-img="../images/uiux5.png" alt="" />
-        </li>
-        <li>
-          <img src="../images/uiux_6.png" data-img="../images/uiux6.png"alt="" />
-        </li>
-        <li>
-          <img src="../images/uiux_7.png" data-img="../images/uiux7.png"alt="" />
-        </li>
-        <li>
-          <img src="../images/uiux_8.png" data-img="../images/uiux8.png"alt="" />
-        </li>
-        <li>
-          <img src="../images/uiux_9.png" data-img="../images/uiux9.png"alt="" />
-        </li>
-      </ul>
+    <div class="popup-gallery">
+      <a href="../images/uiux1.png" title=""
+        ><img src="../images/uiux_1.png" width="300" height="225"
+      /></a>
+      <a href="../images/uiux2.png" title=""
+        ><img src="../images/uiux_2.png" width="300" height="225"
+      /></a>
+      <a href="../images/uiux3.png" title=""
+        ><img src="../images/uiux_3.png" width="300" height="225"
+      /></a>
+      <a href="../images/uiux4.png" title=""
+        ><img src="../images/uiux_4.png" width="300" height="225"
+      /></a>
+      <a href="../images/uiux5.png" title=""
+        ><img src="../images/uiux_5.png" width="300" height="225"
+      /></a>
+      <a href="../images/uiux6.png" title=""
+        ><img src="../images/uiux_6.png" width="300" height="225"
+      /></a>
+      <a href="../images/uiux7.png" title=""
+        ><img src="../images/uiux_7.png" width="300" height="225"
+      /></a>
+      <a href="../images/uiux8.png" title=""
+        ><img src="../images/uiux_8.png" width="300" height="225"
+      /></a>
+      <a href="../images/uiux9.png" title=""
+        ><img src="../images/uiux_9.png" width="300" height="225"
+      /></a>
     </div>
     <script>
       window.addEventListener('scroll', function () {
-  console.log(window.scrollY)
-  const menu = document.querySelector('.top')
-  menu.classList.toggle('sticky', window.scrollY > 50)
-})
-$(document).ready(function() {
-  $(".work").css("opacity", "1").css("transform", "translateY(0%)");
-})
+        console.log(window.scrollY)
+        const menu = document.querySelector('.top')
+        menu.classList.toggle('sticky', window.scrollY > 50)
+      })
+      $(document).ready(function () {
+        $('.popup-gallery')
+          .css('opacity', '1')
+          .css('transform', 'translateY(0%)')
+      })
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script>
-      var item = $('.work li')
-      var dimm = $('.dimm')
-
-      item.click(function () {
-        var dataImg = $(this).find('img').attr('data-img')
-
-        dimm.addClass('show')
-        dimm.find('img').attr('src', dataImg)
-
-        dimm.click(function () {
-          $(this).removeClass('show')
+      $(document).ready(function () {
+        $('.popup-gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1], // Will preload 0 - before current, and 1 after the current image
+          },
+          image: {
+            tError:
+              '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function (item) {
+              return (
+                item.el.attr('title') + '<small>by Marsel Van Oosten</small>'
+              )
+            },
+          },
         })
       })
     </script>
