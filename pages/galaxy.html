@@ -7,6 +7,7 @@
     <title>Galaxy</title>
     <link rel="stylesheet" href="../css/galaxy.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   </head>
   <body>
     <div class="top">
@@ -47,6 +48,17 @@
   console.log(window.scrollY)
   const menu = document.querySelector('.top')
   menu.classList.toggle('sticky', window.scrollY > 50)
+})
+    </script>
+    <script>
+      $(document).ready(function () {
+  $('.content > .intro > p').css('opacity', '1').css('transform', 'translateY(0%)')
+  setTimeout(function () {
+    $('.intro > .link').css('opacity', '1').css('transform', 'translateY(0%)')
+  }, 300)
+  setTimeout(function () {
+    $('.intro > .github > a > img').css('opacity', '1').css('transform', 'translateY(0%)')
+  }, 600)
 })
     </script>
   </body>
