@@ -1,6 +1,5 @@
 $(document).ready(function () {
   $('.wbox_01ul').slick({
-    dots: true,
     autoplay: true,
     vertical: true,
     autoplaySpeed: 3000,
@@ -8,7 +7,6 @@ $(document).ready(function () {
   })
 
   $('.bul').slick({
-    dots: true,
     autoplay: true,
     autoplaySpeed: 3000,
     draggable: false,
