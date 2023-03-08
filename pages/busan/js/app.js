@@ -1,14 +1,10 @@
 $(document).ready(function () {
   $('.wbox_01ul').slick({
-    autoplay: true,
     vertical: true,
-    autoplaySpeed: 3000,
     draggable: false,
   })
 
   $('.bul').slick({
-    autoplay: true,
-    autoplaySpeed: 3000,
     draggable: false,
   })
 
