@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /**
+ * Simple fade transition,
+ */
+      .mfp-fade.mfp-bg {
+        opacity: 0;
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        transition: all 0.15s ease-out;
+      }
+      .mfp-fade.mfp-bg.mfp-ready {
+        opacity: 0.8;
+      }
+      .mfp-fade.mfp-bg.mfp-removing {
+        opacity: 0;
+      }
+
+      .mfp-fade.mfp-wrap .mfp-content {
+        opacity: 0;
+        -webkit-transition: all 0.15s ease-out;
+        -moz-transition: all 0.15s ease-out;
+        transition: all 0.15s ease-out;
+      }
+      .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+        opacity: 1;
+      }
+      .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+        opacity: 0;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  </head>
+  <body>
+    <a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"
+      >Open YouTube video</a
+    ><br />
+    <script>
+      $(document).ready(function () {
+        $('.popup-youtube').magnificPopup({
+          disableOn: 700,
+          type: 'iframe',
+          mainClass: 'mfp-fade',
+          removalDelay: 160,
+          preloader: false,
+
+          fixedContentPos: false,
+        })
+      })
+    </script>
+  </body>
+</html>

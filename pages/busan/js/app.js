@@ -38,3 +38,15 @@ $(document).ready(function () {
     $('.bul').slick('slickPause')
   })
 })
+
+$(document).ready(function () {
+  $('.y1').magnificPopup({
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+
+    fixedContentPos: false,
+  })
+})
