@@ -221,14 +221,10 @@ body {
 
 @media screen and (max-width: 767px) {
   .top .nav > ul {
-    gap: 10px;
+    gap: 16px;
   }
 
   .profile {
-    width: 250px;
-  }
-
-  .profile > img {
-    scale: 0.5;
+    transform: translate(-50%, -50%) scale(0.5);
   }
 }
