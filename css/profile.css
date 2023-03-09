@@ -56,7 +56,7 @@ a {
 }
 
 .top .nav > ul > li::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -72,7 +72,7 @@ a {
 }
 
 .top .nav > ul > li:nth-child(2)::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -217,4 +217,18 @@ body {
 /* 스크롤바가 없을 때 빈 공간의 색상 */
 ::-webkit-scrollbar-track-piece {
   background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .top .nav > ul {
+    gap: 10px;
+  }
+
+  .profile {
+    width: 250px;
+  }
+
+  .profile > img {
+    scale: 0.5;
+  }
 }
