@@ -83,12 +83,15 @@ a {
 
 body {
   background-color: #fff;
+  position: relative;
 }
 
 .content {
   width: 970px;
   height: 885px;
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
   position: relative;
 }
 
@@ -137,5 +140,15 @@ body {
 @media screen and (max-width: 767px) {
   .top .nav > ul {
     gap: 16px;
+  }
+
+  .content {
+    transform: translate(-50%) scale(0.5);
+    position: relative;
+  }
+
+  .work {
+    position: absolute;
+    top: 50px;
   }
 }
