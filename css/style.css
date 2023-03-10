@@ -55,7 +55,7 @@ a {
 }
 
 .top .nav > ul > li::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -71,7 +71,7 @@ a {
 }
 
 .top .nav > ul > li:nth-child(1)::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -144,7 +144,8 @@ body {
   margin-top: 51px;
   display: flex;
   gap: 25px;
-  margin-left: 84px;
+  width: 325px;
+  margin: 0 auto;
   opacity: 0;
   transform: translateY(100%);
   transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
@@ -177,14 +178,18 @@ img {
 
 @media screen and (max-width: 767px) {
   .top .nav > ul {
-    gap: 16px;
+    gap: 10px;
   }
 
   .hello_text {
-    width: 330px;
+    width: 265px;
   }
 
   .hello {
-    font-size: 16px;
+    font-size: 13px;
+  }
+
+  .home > ul {
+    scale: 0.8;
   }
 }
