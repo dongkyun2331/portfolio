@@ -148,12 +148,10 @@ body {
 
   .content {
     transform: translate(-50%) scale(0.5);
-    position: relative;
     height: 885px;
   }
 
   .popup-gallery {
-    position: absolute;
     top: 0;
   }
 }

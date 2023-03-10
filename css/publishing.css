@@ -144,11 +144,9 @@ body {
 
   .content {
     transform: translate(-50%) scale(0.5);
-    position: relative;
   }
 
   .work {
-    position: absolute;
     top: 0;
   }
 }
