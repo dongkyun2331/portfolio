@@ -55,7 +55,7 @@ a {
 }
 
 .top .nav > ul > li::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -71,7 +71,7 @@ a {
 }
 
 .top .nav > ul > li:nth-child(5)::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -83,17 +83,24 @@ a {
 
 body {
   background-color: #fff;
+  position: relative;
+}
+
+.content {
+  width: 970px;
+  height: 1405px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  position: relative;
 }
 
 .popup-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 35px;
-  width: 1005px;
-  margin: 0 auto;
-  margin-top: 200px;
-  margin-bottom: 200px;
-  position: relative;
+  position: absolute;
+  top: 200px;
   opacity: 0;
   transform: translateY(50%);
   transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
@@ -139,7 +146,14 @@ body {
     gap: 16px;
   }
 
+  .content {
+    transform: translate(-50%) scale(0.5);
+    position: relative;
+    height: 885px;
+  }
+
   .popup-gallery {
-    scale: 0.5;
+    position: absolute;
+    top: 0;
   }
 }
