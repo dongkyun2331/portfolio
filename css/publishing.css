@@ -55,7 +55,7 @@ a {
 }
 
 .top .nav > ul > li::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -71,7 +71,7 @@ a {
 }
 
 .top .nav > ul > li:nth-child(3)::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -96,8 +96,8 @@ body {
 }
 
 .work {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 35px;
   position: absolute;
   top: 200px;
@@ -149,6 +149,6 @@ body {
 
   .work {
     position: absolute;
-    top: 50px;
+    /* top: 50px; */
   }
 }
