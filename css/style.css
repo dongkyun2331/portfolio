@@ -181,15 +181,7 @@ img {
     gap: 16px;
   }
 
-  .hello_text {
-    width: 330px;
-  }
-
-  .hello {
-    font-size: 16px;
-  }
-
-  .home > ul {
-    scale: 0.8;
+  .home {
+    transform: translate(-50%, -50%) scale(0.5);
   }
 }
