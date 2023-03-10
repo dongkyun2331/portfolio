@@ -2,10 +2,14 @@ $(document).ready(function () {
   $('.wbox_01ul').slick({
     vertical: true,
     draggable: false,
+    dots: false,
+    arrows: false,
   })
 
   $('.bul').slick({
     draggable: false,
+    dots: false,
+    arrows: false,
   })
 
   $('.slide_slick').slick({
