@@ -27,6 +27,8 @@ a {
 
 .top > .menu {
   display: none;
+  width: 25px;
+  height: 25px;
 }
 
 .top.sticky {
@@ -188,7 +190,7 @@ img {
   background-color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .top {
     height: 70px;
   }
@@ -221,7 +223,7 @@ img {
   .top > .nav > ul {
     margin-top: 50px;
     display: block;
-    width: 768px;
+    width: 767px;
     text-align: center;
     gap: 0;
     height: 100vh;
@@ -229,10 +231,6 @@ img {
 
   .top .nav > ul > li:nth-child(1)::after {
     width: 0;
-  }
-
-  .top .nav > ul > li > a {
-    /* line-height: 0; */
   }
 
   .home {

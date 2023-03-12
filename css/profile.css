@@ -26,6 +26,12 @@ a {
   transition: height 0.3, background-color 0.3s;
 }
 
+.top > .menu {
+  display: none;
+  width: 25px;
+  height: 25px;
+}
+
 .top.sticky {
   height: 70px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -34,6 +40,10 @@ a {
 
 .top .nav {
   z-index: 1;
+}
+
+.top > .nav > button {
+  display: none;
 }
 
 .top .nav > ul {
@@ -56,7 +66,7 @@ a {
 }
 
 .top .nav > ul > li::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -72,7 +82,7 @@ a {
 }
 
 .top .nav > ul > li:nth-child(2)::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -220,10 +230,47 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .top .nav > ul {
-    gap: 16px;
+  .top {
+    height: 70px;
   }
 
+  .top > .menu {
+    display: inherit;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .top .nav {
+    position: fixed;
+    top: 0;
+    display: none;
+    background-color: #fff;
+  }
+
+  .top > .nav > button {
+    display: inherit;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+
+  .top > .nav.active {
+    display: inherit;
+  }
+
+  .top > .nav > ul {
+    margin-top: 50px;
+    display: block;
+    width: 767px;
+    text-align: center;
+    gap: 0;
+    height: 100vh;
+  }
+
+  .top .nav > ul > li:nth-child(2)::after {
+    width: 0;
+  }
   .profile {
     width: 375px;
     display: block;

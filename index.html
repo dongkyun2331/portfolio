@@ -13,22 +13,6 @@
       href="./images/favicon-32x32.png"
     />
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".hello")
-          .addClass("typing")
-          .delay(3500)
-          .queue(function (next) {
-            $(this).removeClass("typing");
-            next();
-            setTimeout(function () {
-              $(".home > .icon > ul")
-                .css("opacity", "1")
-                .css("transform", "translateY(0%)");
-            }, 50);
-          });
-      });
-    </script>
   </head>
   <body>
     <div class="top">
@@ -61,6 +45,22 @@
         </ul>
       </div>
     </div>
+    <script>
+      $(document).ready(function () {
+        $(".hello")
+          .addClass("typing")
+          .delay(3500)
+          .queue(function (next) {
+            $(this).removeClass("typing");
+            next();
+            setTimeout(function () {
+              $(".home > .icon > ul")
+                .css("opacity", "1")
+                .css("transform", "translateY(0%)");
+            }, 50);
+          });
+      });
+    </script>
     <script>
       window.addEventListener("scroll", function () {
         console.log(window.scrollY);
