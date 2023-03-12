@@ -25,6 +25,10 @@ a {
   transition: height 0.3, background-color 0.3s;
 }
 
+.top > img {
+  display: none;
+}
+
 .top.sticky {
   height: 70px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -182,6 +186,18 @@ img {
 
 @media screen and (max-width: 768px) {
   .top {
+    height: 70px;
+    position: relative;
+  }
+
+  .top > img {
+    display: inherit;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .top .nav {
     display: none;
   }
 
