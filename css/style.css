@@ -25,7 +25,7 @@ a {
   transition: height 0.3, background-color 0.3s;
 }
 
-.top > img {
+.top > .menu {
   display: none;
 }
 
@@ -190,7 +190,7 @@ img {
     position: relative;
   }
 
-  .top > img {
+  .top > .menu {
     display: inherit;
     position: absolute;
     right: 20px;
@@ -199,6 +199,28 @@ img {
 
   .top .nav {
     display: none;
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+  }
+
+  .top > .nav.active {
+    display: inherit;
+  }
+
+  .top > .nav > ul {
+    display: block;
+    width: 320px;
+    text-align: center;
+    gap: 0;
+  }
+
+  .top .nav > ul > li:nth-child(1)::after {
+    width: 0;
+  }
+
+  .top .nav > ul > li > a {
+    line-height: 0;
   }
 
   .home {

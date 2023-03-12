@@ -21,13 +21,18 @@
           .queue(function (next) {
             $(this).removeClass("typing");
             next();
+            setTimeout(function () {
+              $(".home > .icon > ul")
+                .css("opacity", "1")
+                .css("transform", "translateY(0%)");
+            }, 50);
           });
       });
     </script>
   </head>
   <body>
     <div class="top">
-      <img src="./images/justified.png" alt="" />
+      <img class="menu" src="./images/justified.png" alt="" />
       <div class="nav">
         <ul>
           <li><a href="#x">홈</a></li>
@@ -39,7 +44,6 @@
       </div>
     </div>
     <div class="home">
-      <div class="sam"></div>
       <img src="./images/profile.png" class="profile" alt="" />
       <div class="hello_text">
         <p class="hello">"안녕하세요. 개발을 좋아하는 임동균입니다."</p>
@@ -64,11 +68,11 @@
       });
       $(document).ready(function () {
         $(".profile").css("opacity", "1").css("transform", "translateY(0%)");
-        setTimeout(function () {
-          $(".home > .icon > ul")
-            .css("opacity", "1")
-            .css("transform", "translateY(0%)");
-        }, 3600);
+      });
+    </script>
+    <script>
+      $(".top > .menu").click(function () {
+        $(".top > .nav").addClass("active");
       });
     </script>
   </body>
