@@ -21,15 +21,17 @@
         <button>X</button>
         <ul>
           <li><a href="../index.html">홈</a></li>
-          <li><a href="./pages/profile.html">프로필</a></li>
-          <li><a href="./pages/publishing.html">퍼블리싱</a></li>
-          <li><a href="./pages/uiux.html">UI/UX</a></li>
-          <li><a href="./pages/graphic_design.html">그래픽 디자인</a></li>
+          <li><a href="./profile.html">프로필</a></li>
+          <li><a href="./publishing.html">퍼블리싱</a></li>
+          <li><a href="./uiux.html">UI/UX</a></li>
+          <li><a href="./graphic_design.html">그래픽 디자인</a></li>
         </ul>
       </div>
     </div>
     <div class="profile">
-      <img src="../images/profile_img.png" alt="" />
+      <div class="profile_img">
+        <img src="../images/profile_img.png" alt="" />
+      </div>
       <div class="content">
         <div class="profile_text">
           <h2>프로필</h2>
@@ -69,7 +71,7 @@
         menu.classList.toggle("sticky", window.scrollY > 50);
       });
       $(document).ready(function () {
-        $(".profile > img")
+        $(".profile_img > img")
           .css("opacity", "1")
           .css("transform", "translateY(0%)");
         setTimeout(function () {
