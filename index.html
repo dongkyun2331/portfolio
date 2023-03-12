@@ -34,6 +34,7 @@
     <div class="top">
       <img class="menu" src="./images/justified.png" alt="" />
       <div class="nav">
+        <button>X</button>
         <ul>
           <li><a href="#x">홈</a></li>
           <li><a href="./pages/profile.html">프로필</a></li>
@@ -73,6 +74,11 @@
     <script>
       $(".top > .menu").click(function () {
         $(".top > .nav").addClass("active");
+      });
+    </script>
+    <script>
+      $(".nav > button").click(function () {
+        $(".top > .nav").removeClass("active");
       });
     </script>
   </body>

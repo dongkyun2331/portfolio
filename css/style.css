@@ -39,6 +39,10 @@ a {
   z-index: 1;
 }
 
+.top > .nav > button {
+  display: none;
+}
+
 .top .nav > ul {
   display: flex;
   gap: 50px;
@@ -187,7 +191,6 @@ img {
 @media screen and (max-width: 768px) {
   .top {
     height: 70px;
-    position: relative;
   }
 
   .top > .menu {
@@ -198,10 +201,17 @@ img {
   }
 
   .top .nav {
-    display: none;
-    position: absolute;
-    background-color: #fff;
+    position: fixed;
     top: 0;
+    display: none;
+    background-color: #fff;
+  }
+
+  .top > .nav > button {
+    display: inherit;
+    position: fixed;
+    top: 20px;
+    right: 20px;
   }
 
   .top > .nav.active {
@@ -209,10 +219,12 @@ img {
   }
 
   .top > .nav > ul {
+    margin-top: 50px;
     display: block;
-    width: 320px;
+    width: 768px;
     text-align: center;
     gap: 0;
+    height: 100vh;
   }
 
   .top .nav > ul > li:nth-child(1)::after {
@@ -220,7 +232,7 @@ img {
   }
 
   .top .nav > ul > li > a {
-    line-height: 0;
+    /* line-height: 0; */
   }
 
   .home {
@@ -231,6 +243,10 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+
+  .hello_text {
+    width: 310px;
   }
 
   .hello {
