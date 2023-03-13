@@ -9,10 +9,6 @@
   z-index: 1;
 }
 
-body {
-  background-color: #fff;
-}
-
 .container {
   display: flex;
   justify-content: center;
