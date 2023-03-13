@@ -23,21 +23,20 @@
   </head>
   <body>
     <div class="header">
-      <img class="menu" src="../images/justified.png" alt="" />
-      <div class="nav">
-        <button>X</button>
-        <ul>
-          <li><a href="../index.html">홈</a></li>
-          <li><a href="./profile.html">프로필</a></li>
-          <li><a href="./publishing.html">퍼블리싱</a></li>
-          <li><a href="./uiux.html">UI/UX</a></li>
-          <li><a href="./graphic_design.html">그래픽 디자인</a></li>
-        </ul>
+      <ul class="nav">
+        <li><a href="../index.html">홈</a></li>
+        <li><a href="./profile.html">프로필</a></li>
+        <li><a href="./publishing.html">퍼블리싱</a></li>
+        <li><a href="./uiux.html">UI/UX</a></li>
+        <li><a href="./graphic_design.html">그래픽 디자인</a></li>
+      </ul>
+      <div class="bars">
+        <i class="xi-bars"></i>
       </div>
     </div>
     <div class="container">
-      <div class="profile_img">
-        <img src="../images/profile_img.png" alt="" />
+      <div class="photo">
+        <img class="profile" src="../images/profile_img.png" alt="" />
       </div>
       <div class="content">
         <div class="profile_text">
@@ -65,7 +64,7 @@
           <li>Python</li>
           <li>R</li>
         </ul>
-        <p class="uni">
+        <p class="education">
           양정인력개발 e-비즈니스 빅데이터 분석가 양성 수료<br />(22.11.21~23.03.21)<br />한경대학교
           토목안전환경공학과 중퇴
         </p>
@@ -77,44 +76,36 @@
         const menu = document.querySelector('.top')
         menu.classList.toggle('sticky', window.scrollY > 50)
       })
-      $(document).ready(function () {
-        $('.profile_img > img')
-          .css('opacity', '1')
-          .css('transform', 'translateY(0%)')
-        setTimeout(function () {
-          $('.profile_text')
-            .css('opacity', '1')
-            .css('transform', 'translateY(0%)')
-        }, 500)
-        setTimeout(function () {
-          $('.name').css('opacity', '1').css('transform', 'translateY(0%)')
-        }, 1000)
-        setTimeout(function () {
-          $('.text').css('opacity', '1').css('transform', 'translateY(0%)')
-        }, 1500)
-        setTimeout(function () {
-          $('.experience')
-            .css('opacity', '1')
-            .css('transform', 'translateY(0%)')
-        }, 2000)
-        setTimeout(function () {
-          $('.experience_nav')
-            .css('opacity', '1')
-            .css('transform', 'translateY(0%)')
-        }, 2500)
-        setTimeout(function () {
-          $('.uni').css('opacity', '1').css('transform', 'translateY(0%)')
-        }, 3000)
+
+      ScrollReveal().reveal('.photo', {
+        delay: 300,
+        distance: '60px',
+        origin: 'bottom',
       })
-    </script>
-    <script>
-      $('.top > .menu').click(function () {
-        $('.top > .nav').addClass('active')
+      ScrollReveal().reveal('.profile_text', {
+        delay: 600,
+        distance: '60px',
+        origin: 'bottom',
       })
-    </script>
-    <script>
-      $('.nav > button').click(function () {
-        $('.top > .nav').removeClass('active')
+      ScrollReveal().reveal('.name', {
+        delay: 900,
+        distance: '60px',
+        origin: 'bottom',
+      })
+      ScrollReveal().reveal('.text', {
+        delay: 1200,
+        distance: '60px',
+        origin: 'bottom',
+      })
+      ScrollReveal().reveal('.experience', {
+        delay: 1500,
+        distance: '60px',
+        origin: 'bottom',
+      })
+
+      $('.bars').click(function () {
+        $('.nav').toggleClass('active')
+        $(this).find('i').toggleClass('xi-close')
       })
     </script>
   </body>
