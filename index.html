@@ -28,8 +28,10 @@
         </ul>
       </div>
     </div>
-    <div class="home">
-      <img src="./images/profile.png" class="profile" alt="" />
+    <div class="container">
+      <div class="profile">
+        <img src="./images/profile.png" alt="" />
+      </div>
       <div class="hello_text">
         <p class="hello">"안녕하세요. 개발을 좋아하는 임동균입니다."</p>
       </div>
@@ -47,39 +49,39 @@
     </div>
     <script>
       $(document).ready(function () {
-        $(".hello")
-          .addClass("typing")
+        $('.hello')
+          .addClass('typing')
           .delay(3500)
           .queue(function (next) {
-            $(this).removeClass("typing");
-            next();
+            $(this).removeClass('typing')
+            next()
             setTimeout(function () {
-              $(".home > .icon > ul")
-                .css("opacity", "1")
-                .css("transform", "translateY(0%)");
-            }, 50);
-          });
-      });
+              $('.icon > ul')
+                .css('opacity', '1')
+                .css('transform', 'translateY(0%)')
+            }, 50)
+          })
+      })
     </script>
     <script>
-      window.addEventListener("scroll", function () {
-        console.log(window.scrollY);
-        const menu = document.querySelector(".top");
-        menu.classList.toggle("sticky", window.scrollY > 50);
-      });
+      window.addEventListener('scroll', function () {
+        console.log(window.scrollY)
+        const menu = document.querySelector('.top')
+        menu.classList.toggle('sticky', window.scrollY > 50)
+      })
       $(document).ready(function () {
-        $(".profile").css("opacity", "1").css("transform", "translateY(0%)");
-      });
+        $('.profile').css('opacity', '1').css('transform', 'translateY(0%)')
+      })
     </script>
     <script>
-      $(".top > .menu").click(function () {
-        $(".top > .nav").addClass("active");
-      });
+      $('.top > .menu').click(function () {
+        $('.top > .nav').addClass('active')
+      })
     </script>
     <script>
-      $(".nav > button").click(function () {
-        $(".top > .nav").removeClass("active");
-      });
+      $('.nav > button').click(function () {
+        $('.top > .nav').removeClass('active')
+      })
     </script>
   </body>
 </html>

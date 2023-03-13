@@ -66,7 +66,7 @@ a {
 }
 
 .top .nav > ul > li::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -82,7 +82,7 @@ a {
 }
 
 .top .nav > ul > li:nth-child(2)::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -272,6 +272,10 @@ body {
     width: 0;
   }
 
+  body {
+    height: 900px;
+  }
+
   .profile {
     display: block;
   }
@@ -288,6 +292,8 @@ body {
   }
 
   .content {
-    text-align: start;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 10px;
   }
 }
