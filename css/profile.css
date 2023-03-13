@@ -7,7 +7,7 @@ li::marker {
   font-size: 1.5em;
 }
 
-.top .nav > ul > li:nth-child(2)::after {
+.nav li:nth-child(2) a::after {
   content: '';
   position: absolute;
   background-color: #ffb800;
@@ -111,70 +111,11 @@ li::marker {
 }
 
 @media screen and (max-width: 767px) {
-  .top {
-    height: 70px;
-  }
-
-  .top > .menu {
-    display: inherit;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
-
-  .top .nav {
-    position: fixed;
-    top: 0;
-    display: none;
-    background-color: #fff;
-  }
-
-  .top > .nav > button {
-    display: inherit;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-  }
-
-  .top > .nav.active {
-    display: inherit;
-  }
-
-  .top > .nav > ul {
-    margin-top: 50px;
-    display: block;
-    width: 767px;
-    text-align: center;
-    gap: 0;
-    height: 100vh;
-  }
-
-  .top .nav > ul > li:nth-child(2)::after {
-    width: 0;
-  }
-
   .container {
-    max-width: 100%;
-  }
-
-  .profile {
     display: block;
   }
 
-  .profile_img {
-    text-align: center;
-  }
-
-  .profile_img > img {
-    margin-top: 50px;
-    margin-bottom: 51px;
-    width: 250px;
-    height: auto;
-  }
-
-  .content {
-    max-width: 320px;
-    margin: 0 auto;
-    padding: 10px;
+  .photo {
+    float: inherit;
   }
 }
