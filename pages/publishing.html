@@ -70,29 +70,34 @@
       });
 
       ScrollReveal().reveal(".work1", {
-        delay: 200,
+        delay: 100,
         distance: "60px",
         origin: "bottom",
       });
       ScrollReveal().reveal(".work2", {
-        delay: 400,
+        delay: 200,
         distance: "60px",
         origin: "bottom",
       });
       ScrollReveal().reveal(".work3", {
-        delay: 600,
+        delay: 300,
         distance: "60px",
         origin: "bottom",
       });
       ScrollReveal().reveal(".work4", {
-        delay: 800,
+        delay: 400,
         distance: "60px",
         origin: "bottom",
       });
       ScrollReveal().reveal(".work5", {
-        delay: 1000,
+        delay: 500,
         distance: "60px",
         origin: "bottom",
+      });
+
+      $(".bars").click(function () {
+        $(".nav").toggleClass("active");
+        $(this).find("i").toggleClass("xi-close");
       });
     </script>
   </body>

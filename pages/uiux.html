@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
     />
+    <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/uiux.css" />
     <link
       rel="icon"
@@ -20,71 +21,72 @@
       sizes="32x32"
       href="../images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
-    <div class="top">
-      <div class="nav">
-        <ul>
-          <li><a href="../index.html">홈</a></li>
-          <li><a href="./profile.html">프로필</a></li>
-          <li><a href="./publishing.html">퍼블리싱</a></li>
-          <li><a href="./uiux.html">UI/UX</a></li>
-          <li><a href="./graphic_design.html">그래픽 디자인</a></li>
-        </ul>
+    <div class="header">
+      <ul class="nav">
+        <li><a href="../index.html">홈</a></li>
+        <li><a href="./profile.html">프로필</a></li>
+        <li><a href="./publishing.html">퍼블리싱</a></li>
+        <li><a href="./uiux.html">UI/UX</a></li>
+        <li><a href="./graphic_design.html">그래픽 디자인</a></li>
+      </ul>
+      <div class="bars">
+        <i class="xi-bars"></i>
       </div>
     </div>
-    <div class="content">
+    <div class="container">
       <div class="popup-gallery">
-        <a href="../images/uiux1.png" title=""
+        <a class="uiux1" href="../images/uiux1.png" title=""
           ><img src="../images/uiux_1.png" width="300" height="225"
         /></a>
-        <a href="../images/uiux2.png" title=""
+        <a class="uiux2" href="../images/uiux2.png" title=""
           ><img src="../images/uiux_2.png" width="300" height="225"
         /></a>
-        <a href="../images/uiux3.png" title=""
+        <a class="uiux3" href="../images/uiux3.png" title=""
           ><img src="../images/uiux_3.png" width="300" height="225"
         /></a>
-        <a href="../images/uiux4.png" title=""
+        <a class="uiux4" href="../images/uiux4.png" title=""
           ><img src="../images/uiux_4.png" width="300" height="225"
         /></a>
-        <a href="../images/uiux5.png" title=""
+        <a class="uiux5" href="../images/uiux5.png" title=""
           ><img src="../images/uiux_5.png" width="300" height="225"
         /></a>
-        <a href="../images/uiux6.png" title=""
+        <a class="uiux6" href="../images/uiux6.png" title=""
           ><img src="../images/uiux_6.png" width="300" height="225"
         /></a>
-        <a href="../images/uiux7.png" title=""
+        <a class="uiux7" href="../images/uiux7.png" title=""
           ><img src="../images/uiux_7.png" width="300" height="225"
         /></a>
-        <a href="../images/uiux8.png" title=""
+        <a class="uiux8" href="../images/uiux8.png" title=""
           ><img src="../images/uiux_8.png" width="300" height="225"
         /></a>
-        <a href="../images/uiux9.png" title=""
+        <a class="uiux9" href="../images/uiux9.png" title=""
           ><img src="../images/uiux_9.png" width="300" height="225"
         /></a>
       </div>
     </div>
     <script>
-      window.addEventListener('scroll', function () {
-        console.log(window.scrollY)
-        const menu = document.querySelector('.top')
-        menu.classList.toggle('sticky', window.scrollY > 50)
-      })
-      $(document).ready(function () {
-        $('.popup-gallery')
-          .css('opacity', '1')
-          .css('transform', 'translateY(0%)')
-      })
+      window.addEventListener("scroll", function () {
+        console.log(window.scrollY);
+        const menu = document.querySelector(".top");
+        menu.classList.toggle("sticky", window.scrollY > 50);
+      });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script>
       $(document).ready(function () {
-        $('.popup-gallery').magnificPopup({
-          delegate: 'a',
-          type: 'image',
-          tLoading: 'Loading image #%curr%...',
-          mainClass: 'mfp-img-mobile',
+        $(".popup-gallery").magnificPopup({
+          delegate: "a",
+          type: "image",
+          tLoading: "Loading image #%curr%...",
+          mainClass: "mfp-img-mobile",
           gallery: {
             enabled: true,
             navigateByImgClick: true,
@@ -95,12 +97,63 @@
               '<a href="%url%">The image #%curr%</a> could not be loaded.',
             titleSrc: function (item) {
               return (
-                item.el.attr('title') + '<small>by Marsel Van Oosten</small>'
-              )
+                item.el.attr("title") + "<small>by Marsel Van Oosten</small>"
+              );
             },
           },
-        })
-      })
+        });
+      });
+
+      ScrollReveal().reveal(".uiux1", {
+        delay: 100,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".uiux2", {
+        delay: 200,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".uiux3", {
+        delay: 300,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".uiux4", {
+        delay: 400,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".uiux5", {
+        delay: 500,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".uiux6", {
+        delay: 600,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".uiux7", {
+        delay: 700,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".uiux8", {
+        delay: 800,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".uiux9", {
+        delay: 900,
+        distance: "60px",
+        origin: "bottom",
+      });
+
+      $(".bars").click(function () {
+        $(".nav").toggleClass("active");
+        $(this).find("i").toggleClass("xi-close");
+      });
     </script>
   </body>
 </html>
