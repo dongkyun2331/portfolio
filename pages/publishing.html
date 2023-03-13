@@ -13,43 +13,49 @@
       sizes="32x32"
       href="../images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
-    <div class="top">
-      <div class="nav">
-        <ul>
-          <li><a href="../index.html">홈</a></li>
-          <li><a href="./profile.html">프로필</a></li>
-          <li><a href="./publishing.html">퍼블리싱</a></li>
-          <li><a href="./uiux.html">UI/UX</a></li>
-          <li><a href="./graphic_design.html">그래픽 디자인</a></li>
-        </ul>
+    <div class="header">
+      <ul class="nav">
+        <li><a href="../index.html">홈</a></li>
+        <li><a href="./profile.html">프로필</a></li>
+        <li><a href="./publishing.html">퍼블리싱</a></li>
+        <li><a href="./uiux.html">UI/UX</a></li>
+        <li><a href="./graphic_design.html">그래픽 디자인</a></li>
+      </ul>
+      <div class="bars">
+        <i class="xi-bars"></i>
       </div>
     </div>
-    <div class="content">
+    <div class="container">
       <ul class="work">
-        <li>
+        <li class="work1">
           <a href="./busan.html"
             ><img src="../images/publishing_busan.png" alt=""
           /></a>
         </li>
-        <li>
+        <li class="work2">
           <a href="./shoes.html"
             ><img src="../images/publishing_sams_shoes.png" alt=""
           /></a>
         </li>
-        <li>
+        <li class="work3">
           <a href="./galaxy.html"
             ><img src="../images/publishing_galaxy.png" alt=""
           /></a>
         </li>
-        <li>
+        <li class="work4">
           <a href="./zepeto.html"
             ><img src="../images/publishing_zepeto.png" alt=""
           /></a>
         </li>
-        <li>
+        <li class="work5">
           <a href="./space.html"
             ><img src="../images/publishing_space.png" alt=""
           /></a>
@@ -62,8 +68,31 @@
         const menu = document.querySelector(".top");
         menu.classList.toggle("sticky", window.scrollY > 50);
       });
-      $(document).ready(function () {
-        $(".work").css("opacity", "1").css("transform", "translateY(0%)");
+
+      ScrollReveal().reveal(".work1", {
+        delay: 200,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".work2", {
+        delay: 400,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".work3", {
+        delay: 600,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".work4", {
+        delay: 800,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".work5", {
+        delay: 1000,
+        distance: "60px",
+        origin: "bottom",
       });
     </script>
   </body>

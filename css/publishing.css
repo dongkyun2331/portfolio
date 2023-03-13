@@ -11,24 +11,17 @@
 
 body {
   background-color: #fff;
-  position: relative;
 }
 
-.content {
-  width: 970px;
-  height: 885px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  position: relative;
+.container {
+  display: flex;
+  justify-content: center;
 }
 
 .work {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 35px;
-  position: absolute;
-  top: 200px;
 }
 
 .work > li > a > img {
@@ -43,11 +36,13 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .top .nav > ul {
-    gap: 16px;
+  .container {
+    margin-top: 60px;
   }
 
   .work {
-    top: 0;
+    margin-top: 60px;
+    grid-template-columns: 1fr;
+    padding-bottom: 60px;
   }
 }
