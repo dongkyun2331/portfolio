@@ -5,62 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>임동균 PORTFOLIO</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/intro.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./js/typingEffect.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
-    <div class="top">
-      <img class="menu" src="./images/justified.png" alt="" />
-      <div class="nav">
-        <button>X</button>
-        <ul>
-          <li><a href="#x">홈</a></li>
-          <li><a href="./pages/profile.html">프로필</a></li>
-          <li><a href="./pages/publishing.html">퍼블리싱</a></li>
-          <li><a href="./pages/uiux.html">UI/UX</a></li>
-          <li><a href="./pages/graphic_design.html">그래픽 디자인</a></li>
-        </ul>
+    <div class="header">
+      <ul class="nav">
+        <li><a href="#x">홈</a></li>
+        <li><a href="./pages/profile.html">프로필</a></li>
+        <li><a href="./pages/publishing.html">퍼블리싱</a></li>
+        <li><a href="./pages/uiux.html">UI/UX</a></li>
+        <li><a href="./pages/graphic_design.html">그래픽 디자인</a></li>
+      </ul>
+      <div class="bars">
+        <i class="xi-bars"></i>
       </div>
     </div>
+
     <div class="container">
-      <div class="profile">
-        <img src="./images/profile.png" alt="" />
+      <div class="photo">
+        <img class="profile" src="./images/profile.png" alt="" />
       </div>
-      <div class="hello_text">
-        <p class="hello">"안녕하세요. 개발을 좋아하는 임동균입니다."</p>
+
+      <div>
+        <p class="typed"></p>
       </div>
-      <div class="icon">
-        <ul>
-          <li><img src="./images/ps.png" alt="" /></li>
-          <li><img src="./images/ai.png" alt="" /></li>
-          <li><img src="./images/figma.png" alt="" /></li>
-          <li><img src="./images/html.png" alt="" /></li>
-          <li><img src="./images/css.png" alt="" /></li>
-          <li><img src="./images/js.png" alt="" /></li>
-          <li><img src="./images/jquery.png" alt="" /></li>
-        </ul>
-      </div>
+
+      <ul class="icons">
+        <li class="icons1"><img src="./images/ps.png" alt="" /></li>
+        <li class="icons2"><img src="./images/ai.png" alt="" /></li>
+        <li class="icons3"><img src="./images/figma.png" alt="" /></li>
+        <li class="icons4"><img src="./images/html.png" alt="" /></li>
+        <li class="icons5"><img src="./images/css.png" alt="" /></li>
+        <li class="icons6"><img src="./images/js.png" alt="" /></li>
+        <li class="icons7"><img src="./images/jquery.png" alt="" /></li>
+      </ul>
     </div>
+
     <script>
-      $(document).ready(function () {
-        $('.hello')
-          .addClass('typing')
-          .delay(3500)
-          .queue(function (next) {
-            $(this).removeClass('typing')
-            next()
-            setTimeout(function () {
-              $('.icon > ul')
-                .css('opacity', '1')
-                .css('transform', 'translateY(0%)')
-            }, 50)
-          })
+      $(function () {
+        $('.typed').typing({
+          strings: ['"안녕하세요."', '"개발을 좋아하는 임동균입니다."'],
+          color: 'black',
+        })
+      })
+
+      ScrollReveal().reveal('.profile', {
+        distance: '60px',
+        origin: 'bottom',
+      })
+
+      ScrollReveal().reveal('.icons1', {
+        delay: 6300,
+        distance: '60px',
+        origin: 'bottom',
+      })
+      ScrollReveal().reveal('.icons2', {
+        delay: 6600,
+        distance: '60px',
+        origin: 'bottom',
+      })
+      ScrollReveal().reveal('.icons3', {
+        delay: 6900,
+        distance: '60px',
+        origin: 'bottom',
+      })
+      ScrollReveal().reveal('.icons4', {
+        delay: 7200,
+        distance: '60px',
+        origin: 'bottom',
+      })
+      ScrollReveal().reveal('.icons5', {
+        delay: 7500,
+        distance: '60px',
+        origin: 'bottom',
+      })
+      ScrollReveal().reveal('.icons6', {
+        delay: 7800,
+        distance: '60px',
+        origin: 'bottom',
+      })
+      ScrollReveal().reveal('.icons7', {
+        delay: 8100,
+        distance: '60px',
+        origin: 'bottom',
+      })
+
+      $('.bars').click(function () {
+        $('.nav').toggleClass('active')
+        $(this).find('i').toggleClass('xi-close')
       })
     </script>
     <script>
@@ -68,19 +114,6 @@
         console.log(window.scrollY)
         const menu = document.querySelector('.top')
         menu.classList.toggle('sticky', window.scrollY > 50)
-      })
-      $(document).ready(function () {
-        $('.profile').css('opacity', '1').css('transform', 'translateY(0%)')
-      })
-    </script>
-    <script>
-      $('.top > .menu').click(function () {
-        $('.top > .nav').addClass('active')
-      })
-    </script>
-    <script>
-      $('.nav > button').click(function () {
-        $('.top > .nav').removeClass('active')
       })
     </script>
   </body>

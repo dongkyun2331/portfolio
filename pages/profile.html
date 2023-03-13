@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>프로필</title>
+    <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/profile.css" />
     <link
       rel="icon"
@@ -12,10 +13,16 @@
       sizes="32x32"
       href="../images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    -
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
-    <div class="top">
+    <div class="header">
       <img class="menu" src="../images/justified.png" alt="" />
       <div class="nav">
         <button>X</button>
@@ -28,7 +35,7 @@
         </ul>
       </div>
     </div>
-    <div class="profile">
+    <div class="container">
       <div class="profile_img">
         <img src="../images/profile_img.png" alt="" />
       </div>
@@ -65,50 +72,50 @@
       </div>
     </div>
     <script>
-      window.addEventListener("scroll", function () {
-        console.log(window.scrollY);
-        const menu = document.querySelector(".top");
-        menu.classList.toggle("sticky", window.scrollY > 50);
-      });
+      window.addEventListener('scroll', function () {
+        console.log(window.scrollY)
+        const menu = document.querySelector('.top')
+        menu.classList.toggle('sticky', window.scrollY > 50)
+      })
       $(document).ready(function () {
-        $(".profile_img > img")
-          .css("opacity", "1")
-          .css("transform", "translateY(0%)");
+        $('.profile_img > img')
+          .css('opacity', '1')
+          .css('transform', 'translateY(0%)')
         setTimeout(function () {
-          $(".profile_text")
-            .css("opacity", "1")
-            .css("transform", "translateY(0%)");
-        }, 500);
+          $('.profile_text')
+            .css('opacity', '1')
+            .css('transform', 'translateY(0%)')
+        }, 500)
         setTimeout(function () {
-          $(".name").css("opacity", "1").css("transform", "translateY(0%)");
-        }, 1000);
+          $('.name').css('opacity', '1').css('transform', 'translateY(0%)')
+        }, 1000)
         setTimeout(function () {
-          $(".text").css("opacity", "1").css("transform", "translateY(0%)");
-        }, 1500);
+          $('.text').css('opacity', '1').css('transform', 'translateY(0%)')
+        }, 1500)
         setTimeout(function () {
-          $(".experience")
-            .css("opacity", "1")
-            .css("transform", "translateY(0%)");
-        }, 2000);
+          $('.experience')
+            .css('opacity', '1')
+            .css('transform', 'translateY(0%)')
+        }, 2000)
         setTimeout(function () {
-          $(".experience_nav")
-            .css("opacity", "1")
-            .css("transform", "translateY(0%)");
-        }, 2500);
+          $('.experience_nav')
+            .css('opacity', '1')
+            .css('transform', 'translateY(0%)')
+        }, 2500)
         setTimeout(function () {
-          $(".uni").css("opacity", "1").css("transform", "translateY(0%)");
-        }, 3000);
-      });
+          $('.uni').css('opacity', '1').css('transform', 'translateY(0%)')
+        }, 3000)
+      })
     </script>
     <script>
-      $(".top > .menu").click(function () {
-        $(".top > .nav").addClass("active");
-      });
+      $('.top > .menu').click(function () {
+        $('.top > .nav').addClass('active')
+      })
     </script>
     <script>
-      $(".nav > button").click(function () {
-        $(".top > .nav").removeClass("active");
-      });
+      $('.nav > button').click(function () {
+        $('.top > .nav').removeClass('active')
+      })
     </script>
   </body>
 </html>
