@@ -8,7 +8,7 @@ li::marker {
 }
 
 .nav li:nth-child(2) a::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -28,7 +28,7 @@ li::marker {
   float: left;
 }
 
-.photo img {
+.photo > img {
   margin-top: 150px;
   width: 378.81px;
 }
@@ -113,9 +113,27 @@ li::marker {
 @media screen and (max-width: 767px) {
   .container {
     display: block;
+    width: 100vw;
+    max-width: none; /* 이전 값: 1000px */
   }
 
   .photo {
     float: inherit;
+  }
+
+  .photo > img {
+    margin-top: 60px;
+  }
+
+  .content {
+    margin-left: 20px;
+  }
+
+  .content .profile_text {
+    margin-top: 50px;
+  }
+
+  .education {
+    margin-bottom: 60px;
   }
 }

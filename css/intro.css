@@ -1,5 +1,5 @@
 .nav li:nth-child(1) a::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -42,7 +42,7 @@
   margin-top: 60px;
 }
 
-img {
+.icons > li > img {
   width: 25px;
   height: 25px;
 }
@@ -51,5 +51,9 @@ img {
   .typed {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .icons {
+    margin-bottom: 60px;
   }
 }

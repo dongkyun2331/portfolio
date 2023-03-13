@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>퍼블리싱</title>
+    <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/publishing.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   </head>
   <body>
@@ -34,25 +40,31 @@
           /></a>
         </li>
         <li>
-          <a href="./galaxy.html"><img src="../images/publishing_galaxy.png" alt="" /></a>
+          <a href="./galaxy.html"
+            ><img src="../images/publishing_galaxy.png" alt=""
+          /></a>
         </li>
         <li>
-          <a href="./zepeto.html"><img src="../images/publishing_zepeto.png" alt="" /></a>
+          <a href="./zepeto.html"
+            ><img src="../images/publishing_zepeto.png" alt=""
+          /></a>
         </li>
         <li>
-          <a href="./space.html"><img src="../images/publishing_space.png" alt="" /></a>
+          <a href="./space.html"
+            ><img src="../images/publishing_space.png" alt=""
+          /></a>
         </li>
       </ul>
     </div>
     <script>
-      window.addEventListener('scroll', function () {
-  console.log(window.scrollY)
-  const menu = document.querySelector('.top')
-  menu.classList.toggle('sticky', window.scrollY > 50)
-})
-$(document).ready(function() {
-  $(".work").css("opacity", "1").css("transform", "translateY(0%)");
-})
+      window.addEventListener("scroll", function () {
+        console.log(window.scrollY);
+        const menu = document.querySelector(".top");
+        menu.classList.toggle("sticky", window.scrollY > 50);
+      });
+      $(document).ready(function () {
+        $(".work").css("opacity", "1").css("transform", "translateY(0%)");
+      });
     </script>
   </body>
 </html>
