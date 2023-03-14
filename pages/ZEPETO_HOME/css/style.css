@@ -211,16 +211,13 @@ body {
   line-height: 55.67px;
   color: #fff;
   text-align: center;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .btn-link {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 100%);
+  transform: translateX(-50%);
   height: 46px;
   line-height: 46px;
   width: 106px;
@@ -232,8 +229,6 @@ body {
   color: #7d6aff;
   font-weight: 600;
   display: inline-block;
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame3 {
@@ -249,21 +244,19 @@ body {
   /* 크리에이터를 위한 제페토. */
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 100%);
+  transform: translateX(-50%);
   top: 81px;
   font-weight: 600;
   font-size: 40px;
   letter-spacing: 0.03em;
   color: #000000;
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame3_p {
   /* 제페토 크리에이터는 제페토 세상의 모든 것을 직접 만들 수 있습니다. 전 세계 3억 유저에게 당신의 아이디어를 보여주세요! */
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 100%);
+  transform: translateX(-50%);
   /* left: 308px; */
   top: 142px;
   font-weight: 500;
@@ -272,8 +265,6 @@ body {
   text-align: center;
   letter-spacing: 0.01em;
   color: #6b6b6f;
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame3_img {
