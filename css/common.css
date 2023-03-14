@@ -54,7 +54,7 @@ a {
 }
 
 .nav li a::after {
-  content: "";
+  content: '';
   display: inline-block;
   position: absolute;
   background-color: #ffb800;
@@ -103,7 +103,6 @@ a {
   .bars {
     display: initial;
     position: absolute;
-    top: 0;
     right: 26px;
     top: 26px;
   }

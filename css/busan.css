@@ -10,9 +10,10 @@
 }
 
 .back {
-  position: fixed;
-  top: 25px;
-  left: 2.6%;
+  font-size: 36px;
+  color: #000;
+  position: absolute;
+  left: 26px;
 }
 
 .container {
@@ -22,9 +23,7 @@
   margin: 0 auto;
 }
 
-.container > .back > img {
-  width: 20px;
-  height: 20px;
+.back > i {
 }
 
 .container > .intro > p {
@@ -142,7 +141,7 @@
   }
 
   .back {
-    top: 30px;
+    top: 26px;
   }
 
   .intro > .link {
