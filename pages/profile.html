@@ -70,13 +70,8 @@
         </p>
       </div>
     </div>
+    <script src="../js/common.js"></script>
     <script>
-      window.addEventListener('scroll', function () {
-        console.log(window.scrollY)
-        const menu = document.querySelector('.top')
-        menu.classList.toggle('sticky', window.scrollY > 50)
-      })
-
       ScrollReveal().reveal('.photo', {
         delay: 200,
         distance: '60px',

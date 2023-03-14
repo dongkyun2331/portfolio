@@ -1,5 +1,5 @@
 .nav li:nth-child(3) a::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -139,6 +139,10 @@
   .container > .intro > p {
     top: 100px;
     right: 10.41%;
+  }
+
+  .back {
+    top: 30px;
   }
 
   .intro > .link {
