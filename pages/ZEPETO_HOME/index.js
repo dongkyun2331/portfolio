@@ -6,213 +6,94 @@ $('.bul').slick({
   slidesToShow: 5,
 })
 
-// document.body.style.zoom = '150%'
-
-$(document).ready(function () {
-  $('.Frame2_title').css('opacity', '1').css('transform', 'translateY(0%)')
-  setTimeout(function () {
-    $('.btn-link').css('opacity', '1').css('transform', 'translate(-50%,0%)')
-  }, 400)
-  $(window).on('scroll', function () {
-    var windowHeight = $(window).height()
-    var scrollHeight = $(document).scrollTop()
-    $('.Frame3_title').each(function () {
-      var elementPosition = $(this).offset().top
-      if (scrollHeight > elementPosition - windowHeight) {
-        $(this).css('opacity', '1').css('transform', 'translate(-50%,0%)')
-        setTimeout(function () {
-          $(window).on('scroll', function () {
-            var windowHeight = $(window).height()
-            var scrollHeight = $(document).scrollTop()
-            $('.Frame3_p').each(function () {
-              var elementPosition = $(this).offset().top
-              if (scrollHeight > elementPosition - windowHeight) {
-                $(this)
-                  .css('opacity', '1')
-                  .css('transform', 'translate(-50%,0%)')
-              }
-            })
-          })
-        }, 400)
-        $(window).on('scroll', function () {
-          var windowHeight = $(window).height()
-          var scrollHeight = $(document).scrollTop()
-          $('.Frame3_img').each(function () {
-            var elementPosition = $(this).offset().top
-            if (scrollHeight > elementPosition - windowHeight) {
-              $(this).css('opacity', '1').css('transform', 'translate(-50%,0%)')
-            }
-          })
-        })
-        setTimeout(function () {
-          $(window).on('scroll', function () {
-            var windowHeight = $(window).height()
-            var scrollHeight = $(document).scrollTop()
-            $('.Frame3_text').each(function () {
-              var elementPosition = $(this).offset().top
-              if (scrollHeight > elementPosition - windowHeight) {
-                $(this).css('opacity', '1').css('transform', 'translateY(0%)')
-              }
-            })
-          })
-        }, 1000)
-        setTimeout(function () {
-          $(window).on('scroll', function () {
-            var windowHeight = $(window).height()
-            var scrollHeight = $(document).scrollTop()
-            $('.Frame4_title').each(function () {
-              var elementPosition = $(this).offset().top
-              if (scrollHeight > elementPosition - windowHeight) {
-                $(this).css('opacity', '1').css('transform', 'translateY(0%)')
-              }
-            })
-          })
-        }, 500)
-        setTimeout(function () {
-          $(window).on('scroll', function () {
-            var windowHeight = $(window).height()
-            var scrollHeight = $(document).scrollTop()
-            $('.Frame4_title').each(function () {
-              var elementPosition = $(this).offset().top
-              if (scrollHeight > elementPosition - windowHeight) {
-                $(this).css('opacity', '1').css('transform', 'translateY(0%)')
-              }
-            })
-          })
-        }, 500)
-        setTimeout(function () {
-          $(window).on('scroll', function () {
-            var windowHeight = $(window).height()
-            var scrollHeight = $(document).scrollTop()
-            $('.Frame4_p').each(function () {
-              var elementPosition = $(this).offset().top
-              if (scrollHeight > elementPosition - windowHeight) {
-                $(this).css('opacity', '1').css('transform', 'translateY(0%)')
-              }
-            })
-          })
-        }, 500)
-        setTimeout(function () {
-          $(window).on('scroll', function () {
-            var windowHeight = $(window).height()
-            var scrollHeight = $(document).scrollTop()
-            $('.Frame4_box > ul').each(function () {
-              var elementPosition = $(this).offset().top
-              if (scrollHeight > elementPosition - windowHeight) {
-                $(this).css('opacity', '1').css('transform', 'translateY(0%)')
-              }
-            })
-          })
-        }, 500)
-        setTimeout(function () {
-          $(window).on('scroll', function () {
-            var windowHeight = $(window).height()
-            var scrollHeight = $(document).scrollTop()
-            $('.Frame5_title').each(function () {
-              var elementPosition = $(this).offset().top
-              if (scrollHeight > elementPosition - windowHeight) {
-                $(this).css('opacity', '1').css('transform', 'translateY(0%)')
-              }
-            })
-          })
-        }, 500)
-        setTimeout(function () {
-          $(window).on('scroll', function () {
-            var windowHeight = $(window).height()
-            var scrollHeight = $(document).scrollTop()
-            $('.Frame5_p').each(function () {
-              var elementPosition = $(this).offset().top
-              if (scrollHeight > elementPosition - windowHeight) {
-                $(this).css('opacity', '1').css('transform', 'translateY(0%)')
-              }
-            })
-          })
-        }, 500)
-        setTimeout(function () {
-          $(window).on('scroll', function () {
-            var windowHeight = $(window).height()
-            var scrollHeight = $(document).scrollTop()
-            $('.bul').each(function () {
-              var elementPosition = $(this).offset().top
-              if (scrollHeight > elementPosition - windowHeight) {
-                $(this).css('opacity', '1').css('transform', 'translateY(0%)')
-              }
-            })
-          })
-        }, 500)
-        setTimeout(function () {
-          $(window).on('scroll', function () {
-            var windowHeight = $(window).height()
-            var scrollHeight = $(document).scrollTop()
-            $('.Frame6_title').each(function () {
-              var elementPosition = $(this).offset().top
-              if (scrollHeight > elementPosition - windowHeight) {
-                $(this).css('opacity', '1').css('transform', 'translateY(0%)')
-              }
-            })
-          })
-        }, 500)
-        setTimeout(function () {
-          $(window).on('scroll', function () {
-            var windowHeight = $(window).height()
-            var scrollHeight = $(document).scrollTop()
-            $('.Frame6_p').each(function () {
-              var elementPosition = $(this).offset().top
-              if (scrollHeight > elementPosition - windowHeight) {
-                $(this).css('opacity', '1').css('transform', 'translateY(0%)')
-              }
-            })
-          })
-        }, 500)
-        setTimeout(function () {
-          $(window).on('scroll', function () {
-            var windowHeight = $(window).height()
-            var scrollHeight = $(document).scrollTop()
-            $('.Frame7_title').each(function () {
-              var elementPosition = $(this).offset().top
-              if (scrollHeight > elementPosition - windowHeight) {
-                $(this).css('opacity', '1').css('transform', 'translateY(0%)')
-              }
-            })
-          })
-        }, 500)
-        setTimeout(function () {
-          $(window).on('scroll', function () {
-            var windowHeight = $(window).height()
-            var scrollHeight = $(document).scrollTop()
-            $('.Frame7_p').each(function () {
-              var elementPosition = $(this).offset().top
-              if (scrollHeight > elementPosition - windowHeight) {
-                $(this).css('opacity', '1').css('transform', 'translateY(0%)')
-              }
-            })
-          })
-        }, 500)
-        setTimeout(function () {
-          $(window).on('scroll', function () {
-            var windowHeight = $(window).height()
-            var scrollHeight = $(document).scrollTop()
-            $('.Frame7 > button').each(function () {
-              var elementPosition = $(this).offset().top
-              if (scrollHeight > elementPosition - windowHeight) {
-                $(this).css('opacity', '1').css('transform', 'translateY(0%)')
-              }
-            })
-          })
-        }, 500)
-        setTimeout(function () {
-          $(window).on('scroll', function () {
-            var windowHeight = $(window).height()
-            var scrollHeight = $(document).scrollTop()
-            $('.Frame7_rg').each(function () {
-              var elementPosition = $(this).offset().top
-              if (scrollHeight > elementPosition - windowHeight) {
-                $(this).css('opacity', '1').css('transform', 'translateY(0%)')
-              }
-            })
-          })
-        }, 500)
-      }
-    })
-  })
+document.body.style.zoom = '150%'
+ScrollReveal().reveal('.Frame2_title', {
+  delay: 100,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.btn-link', {
+  delay: 200,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.Frame3_title', {
+  delay: 300,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.Frame3_p', {
+  delay: 400,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.Frame3_img', {
+  delay: 500,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.Frame3_text', {
+  delay: 600,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.Frame4_title', {
+  delay: 700,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('..Frame4_p', {
+  delay: 800,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.Frame4_box > ul', {
+  delay: 900,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.Frame5_title', {
+  delay: 1000,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.Frame5_p', {
+  delay: 1100,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.bul', {
+  delay: 1200,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.Frame6_title', {
+  delay: 1300,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.Frame6_p', {
+  delay: 1400,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.Frame7_title', {
+  delay: 1500,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.Frame7_p', {
+  delay: 1600,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.Frame7 > button', {
+  delay: 1700,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.Frame7_rg', {
+  delay: 1800,
+  distance: '60px',
+  origin: 'bottom',
 })
