@@ -5,26 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Space</title>
+    <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/space.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
-    <div class="top">
-      <div class="nav">
-        <ul>
-          <li><a href="../index.html">홈</a></li>
-          <li><a href="./profile.html">프로필</a></li>
-          <li><a href="./publishing.html">퍼블리싱</a></li>
-          <li><a href="./uiux.html">UI/UX</a></li>
-          <li><a href="./graphic_design.html">그래픽 디자인</a></li>
-        </ul>
+    <div class="header">
+      <a href="./publishing.html" class="back"><i class="xi-arrow-left"></i></a>
+      <ul class="nav">
+        <li><a href="../index.html">홈</a></li>
+        <li><a href="./profile.html">프로필</a></li>
+        <li><a href="./publishing.html">퍼블리싱</a></li>
+        <li><a href="./uiux.html">UI/UX</a></li>
+        <li><a href="./graphic_design.html">그래픽 디자인</a></li>
+      </ul>
+      <div class="bars">
+        <i class="xi-bars"></i>
       </div>
     </div>
     <div class="content">
-      <a href="./publishing.html" class="back"
-        ><img src="../images/back.png" alt=""
-      /></a>
       <div class="intro">
         <p>스페이스. 홈페이지를 퍼블리싱 했습니다.</p>
         <div class="link">
@@ -43,23 +53,33 @@
         </a>
       </div>
     </div>
+    <script src="../js/common.js"></script>
     <script>
-      window.addEventListener('scroll', function () {
-  console.log(window.scrollY)
-  const menu = document.querySelector('.top')
-  menu.classList.toggle('sticky', window.scrollY > 50)
-})
-    </script>
-    <script>
-      $(document).ready(function () {
-  $('.content > .intro > p').css('opacity', '1').css('transform', 'translateY(0%)')
-  setTimeout(function () {
-    $('.intro > .link').css('opacity', '1').css('transform', 'translateY(0%)')
-  }, 300)
-  setTimeout(function () {
-    $('.intro > .github > a > img').css('opacity', '1').css('transform', 'translateY(0%)')
-  }, 600)
-})
+      ScrollReveal().reveal('.intro > p', {
+        delay: 100,
+        distance: '60px',
+        origin: 'bottom',
+      })
+      ScrollReveal().reveal('.link', {
+        delay: 200,
+        distance: '60px',
+        origin: 'bottom',
+      })
+      ScrollReveal().reveal('.github > a > img', {
+        delay: 300,
+        distance: '60px',
+        origin: 'bottom',
+      })
+      ScrollReveal().reveal('.main > p', {
+        delay: 400,
+        distance: '60px',
+        origin: 'bottom',
+      })
+      ScrollReveal().reveal('.main > a > img', {
+        delay: 500,
+        distance: '60px',
+        origin: 'bottom',
+      })
     </script>
   </body>
 </html>
