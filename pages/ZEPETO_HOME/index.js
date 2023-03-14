@@ -6,6 +6,8 @@ $('.bul').slick({
   slidesToShow: 5,
 })
 
+document.body.style.zoom = '150%'
+
 $(document).ready(function () {
   $('.Frame2_title').css('opacity', '1').css('transform', 'translateY(0%)')
   setTimeout(function () {
