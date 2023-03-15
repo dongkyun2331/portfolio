@@ -401,13 +401,13 @@ body {
 .play {
   position: absolute;
   bottom: 118px;
-  font-size: 26px;
-  color: #6f6f6f;
 }
 
 .play button {
   border: none;
   background-color: #f7f7f7;
+  font-size: 26px;
+  color: #6f6f6f;
 }
 
 .photo_slick {
