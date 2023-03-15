@@ -23,6 +23,20 @@ $('.photo_slick').slick({
   prevArrow: $('.left3'),
 })
 
+$('.photo_slick').on('afterChange', function (event, slick, currentSlide) {
+  $('.number').text(currentSlide + 1)
+})
+
+$('.play3').click(function () {
+  if ($(this).find('i').hasClass('xi-play')) {
+    $('.photo_slick').slick('slickPlay')
+    $(this).find('i').removeClass('xi-play').addClass('xi-pause')
+  } else {
+    $('.photo_slick').slick('slickPause')
+    $(this).find('i').removeClass('xi-pause').addClass('xi-play')
+  }
+})
+
 $('.right').click(function () {
   $('.wbox_01ul').slick('slickNext')
   $('.bul').slick('slickNext')

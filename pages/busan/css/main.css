@@ -392,6 +392,11 @@ body {
   top: 42px;
 }
 
+.number::after {
+  content: '/2';
+  color: #1f609b;
+}
+
 .text {
   font-size: 26px;
   position: absolute;
