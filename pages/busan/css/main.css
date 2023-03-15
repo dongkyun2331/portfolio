@@ -259,16 +259,12 @@ body {
   height: 214px;
 }
 
-.slide_slick {
+.slide_slick_container {
   padding-top: 30px;
   margin: 0 auto;
   width: 1301px;
   height: 258px;
-}
-
-.slide_all {
-  width: 1301px;
-  height: 258px;
+  position: relative;
 }
 
 .right2 {
@@ -286,15 +282,16 @@ body {
   position: relative;
 }
 
-.slide .ellipse {
+.ellipse {
   display: flex;
   justify-content: space-between;
   position: absolute;
   top: 100px;
   position: relative;
+  z-index: 1;
 }
 
-.slide .ellipse li {
+.ellipse li {
   width: 62px;
   height: 62px;
   border-radius: 62px;
@@ -305,12 +302,12 @@ body {
   font-weight: 700;
 }
 
-.slide .ellipse li:first-child {
+.ellipse li:first-child {
   position: absolute;
   left: 10px;
 }
 
-.slide .ellipse li:last-child {
+.ellipse li:last-child {
   position: absolute;
   right: 10px;
 }
