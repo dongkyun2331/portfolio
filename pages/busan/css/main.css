@@ -378,20 +378,10 @@ body {
   margin-top: 10px;
 }
 
-.gray_slick {
-  width: 1300px;
-  height: 389px;
-  margin: 0 auto;
-}
-
-.gray_all {
-  width: 1300px;
-  height: 389px;
-}
-
 .gray .gray_contents {
   width: 1300px;
   height: 389px;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -420,10 +410,20 @@ body {
   background-color: #f7f7f7;
 }
 
+.photo_slick {
+  width: 1000px;
+  height: 310px;
+  float: right;
+  margin-top: 40px;
+}
+
+.photo_slide {
+  width: 1000px;
+  height: 310px;
+  margin: 0 auto;
+}
+
 .photo {
-  position: absolute;
-  top: 40px;
-  left: 310px;
   display: flex;
 }
 
@@ -505,7 +505,7 @@ body {
   line-height: 42px;
 }
 
-.weather .text {
+.weather .blue_text {
   font-size: 30px;
   color: #356ed5;
   font-weight: 700;

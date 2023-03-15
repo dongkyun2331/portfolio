@@ -17,10 +17,10 @@ $(document).ready(function () {
     prevArrow: $('.left2'),
   })
 
-  // $('.photo_slick').slick({
-  //   nextArrow: $('.right3'),
-  //   prevArrow: $('.left3'),
-  // })
+  $('.photo_slick').slick({
+    nextArrow: $('.right3'),
+    prevArrow: $('.left3'),
+  })
 
   $('.right').click(function () {
     $('.wbox_01ul').slick('slickNext')
