@@ -32,14 +32,18 @@ $(document).ready(function () {
     $('.bul').slick('slickPrev')
   })
 
+  var intervalId = null // setInterval() 함수의 반환 값
+
   $('.start').click(function () {
-    $('.wbox_01ul').slick('slickPlay')
-    $('.bul').slick('slickPlay')
+    // setInterval() 함수로 일정 간격으로 코드를 반복 실행
+    intervalId = setInterval(function () {
+      $('.wbox_01ul').slick('slickNext')
+      $('.bul').slick('slickNext')
+    }, 3000) // 3초 간격으로 실행
   })
 
   $('.stop').click(function () {
-    $('.wbox_01ul').slick('slickPause')
-    $('.bul').slick('slickPause')
+    clearInterval(intervalId) // setInterval() 함수를 중지
   })
 })
 
