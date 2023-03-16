@@ -66,3 +66,8 @@ $('.y1').magnificPopup({
 
   fixedContentPos: false,
 })
+
+$('.photo li').hover(function () {
+  $('.wave').toggleClass('move')
+  $('.photo_image').toggleClass('move')
+})
