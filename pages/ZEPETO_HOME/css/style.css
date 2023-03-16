@@ -278,17 +278,16 @@ body {
   height: 405.47px;
 }
 
-.Frame3_text {
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+.Frame3_ul {
+  display: flex;
+  position: absolute;
+  top: 683px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 86px;
 }
 
 .Frame3_t1 {
-  /* 6800만 */
-  position: absolute;
-  left: 311px;
-  top: 683px;
   font-weight: 600;
   font-size: 17px;
   text-align: center;
@@ -297,55 +296,7 @@ body {
 }
 
 .Frame3_p1 {
-  /* 스튜디오 아이템 판매량 */
-  position: absolute;
-  left: 282px;
-  top: 713px;
   height: 15px;
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 0.03em;
-  color: #646469;
-}
-
-.Frame3_t2 {
-  /* 230만 */
-  position: absolute;
-  left: 524px;
-  top: 683px;
-  font-weight: 600;
-  font-size: 17px;
-  letter-spacing: 0.01em;
-  color: #000000;
-}
-
-.Frame3_p2 {
-  /* 스튜디오 크리에이터 수 */
-  position: absolute;
-  left: 489px;
-  top: 713px;
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 0.03em;
-  color: #646469;
-}
-
-.Frame3_t3 {
-  /* 3억 */
-  position: absolute;
-  left: 742px;
-  top: 683px;
-  font-weight: 600;
-  font-size: 17px;
-  letter-spacing: 0.01em;
-  color: #000000;
-}
-
-.Frame3_p3 {
-  /* 제페토 가입자 수 */
-  position: absolute;
-  left: 713px;
-  top: 713px;
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.03em;
@@ -375,9 +326,6 @@ body {
   font-size: 40px;
   letter-spacing: 0.02em;
   color: #000000;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame4_p {
@@ -391,9 +339,6 @@ body {
   text-align: center;
   letter-spacing: 0.01em;
   color: #55555a;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame4_box > ul {
@@ -402,9 +347,6 @@ body {
   left: 192px;
   gap: 25px;
   display: flex;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame4_box > ul > li {
@@ -469,9 +411,6 @@ body {
   letter-spacing: 0.02em;
   color: #000000;
   margin-top: 83px;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame5_p {
@@ -482,9 +421,6 @@ body {
   letter-spacing: 0.01em;
   color: #55555a;
   margin-top: 11px;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .bul_box {
@@ -501,9 +437,6 @@ body {
 .bul {
   margin: 0 auto;
   margin: 100px 0;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .bul .item > img {
@@ -566,9 +499,6 @@ body {
   font-size: 40px;
   letter-spacing: 0.02em;
   color: #000000;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame6_p {
@@ -581,9 +511,6 @@ body {
   letter-spacing: 0.01em;
   color: #55555a;
   z-index: 1;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame6_video {
@@ -612,9 +539,6 @@ body {
   font-size: 40px;
   letter-spacing: 0.02em;
   color: #000000;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame7_p {
@@ -628,9 +552,6 @@ body {
   text-align: center;
   letter-spacing: 0.01em;
   color: #55555a;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame7 > button {
@@ -643,9 +564,6 @@ body {
   border-radius: 19.5px;
   border: none;
   color: #fff;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame7_rg {
@@ -658,9 +576,6 @@ body {
   border-radius: 10px;
   display: flex;
   position: relative;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame7_rg > li {
