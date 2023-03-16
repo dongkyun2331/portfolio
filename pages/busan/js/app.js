@@ -4,6 +4,7 @@ $('.wbox_01ul').slick({
   dots: false,
   arrows: false,
   pauseOnHover: false,
+  autoplay: true,
 })
 
 $('.bul').slick({
@@ -11,6 +12,7 @@ $('.bul').slick({
   dots: false,
   arrows: false,
   pauseOnHover: false,
+  autoplay: true,
 })
 
 $('.slide_slick').slick({
