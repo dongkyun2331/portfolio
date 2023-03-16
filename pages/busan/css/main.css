@@ -441,25 +441,25 @@ body {
   overflow: hidden;
 }
 
-.photo_image {
+.photo_image1 {
   filter: brightness(50%);
 }
 
-.photo_image.move {
+.photo_image1.move {
   filter: brightness(100%);
 }
 
-.photo li .wave {
+.wave1 {
   position: absolute;
   bottom: -60px;
   left: 0;
 }
 
-.photo li .wave.move {
+.wave1.move {
   bottom: 0;
 }
 
-.photo li .plus {
+.plus1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -469,11 +469,11 @@ body {
   opacity: 0;
 }
 
-.photo li .plus.move {
+.plus1.move {
   opacity: 1;
 }
 
-.photo li p {
+.photo_p1 {
   position: absolute;
   top: 214px;
   left: 18px;
@@ -481,7 +481,7 @@ body {
   color: #313031;
 }
 
-.photo li p.move {
+.photo_p1.move {
   top: 184px;
 }
 
