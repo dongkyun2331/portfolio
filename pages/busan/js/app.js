@@ -73,3 +73,21 @@ $('.photo1').hover(function () {
   $('.photo_p1').toggleClass('move')
   $('.plus1').toggleClass('move')
 })
+$('.photo2').hover(function () {
+  $('.wave2').toggleClass('move')
+  $('.photo_image2').toggleClass('move')
+  $('.photo_p2').toggleClass('move')
+  $('.plus2').toggleClass('move')
+})
+$('.photo3').hover(function () {
+  $('.wave3').toggleClass('move')
+  $('.photo_image3').toggleClass('move')
+  $('.photo_p3').toggleClass('move')
+  $('.plus3').toggleClass('move')
+})
+$('.photo4').hover(function () {
+  $('.wave4').toggleClass('move')
+  $('.photo_image4').toggleClass('move')
+  $('.photo_p4').toggleClass('move')
+  $('.plus4').toggleClass('move')
+})
