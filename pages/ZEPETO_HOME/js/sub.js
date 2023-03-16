@@ -55,7 +55,19 @@ ScrollReveal().reveal('.Frame4_p', {
   distance: '60px',
   origin: 'bottom',
 })
+ScrollReveal().reveal('.Frame4_slick_all', {
+  delay: 600,
+  duration: 1000,
+  distance: '60px',
+  origin: 'bottom',
+})
 ScrollReveal().reveal('.Frame5_h2', {
+  duration: 1000,
+  distance: '60px',
+  origin: 'bottom',
+})
+ScrollReveal().reveal('.Frame5_ul', {
+  delay: 300,
   duration: 1000,
   distance: '60px',
   origin: 'bottom',
