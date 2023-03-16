@@ -69,27 +69,9 @@ $('.y1').magnificPopup({
   fixedContentPos: false,
 })
 
-$('.photo1').hover(function () {
-  $('.wave1').toggleClass('move')
-  $('.photo_image1').toggleClass('move')
-  $('.photo_p1').toggleClass('move')
-  $('.plus1').toggleClass('move')
-})
-$('.photo2').hover(function () {
-  $('.wave2').toggleClass('move')
-  $('.photo_image2').toggleClass('move')
-  $('.photo_p2').toggleClass('move')
-  $('.plus2').toggleClass('move')
-})
-$('.photo3').hover(function () {
-  $('.wave3').toggleClass('move')
-  $('.photo_image3').toggleClass('move')
-  $('.photo_p3').toggleClass('move')
-  $('.plus3').toggleClass('move')
-})
-$('.photo4').hover(function () {
-  $('.wave4').toggleClass('move')
-  $('.photo_image4').toggleClass('move')
-  $('.photo_p4').toggleClass('move')
-  $('.plus4').toggleClass('move')
+$('.photo li').hover(function () {
+  $(this).find('.wave').toggleClass('move')
+  $(this).find('.photo_image').toggleClass('move')
+  $(this).find('.photo_p').toggleClass('move')
+  $(this).find('.plus').toggleClass('move')
 })

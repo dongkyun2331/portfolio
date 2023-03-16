@@ -441,25 +441,25 @@ body {
   overflow: hidden;
 }
 
-.photo_image1 {
+.photo_image {
   filter: brightness(50%);
 }
 
-.photo_image1.move {
+.photo_image.move {
   filter: brightness(100%);
 }
 
-.wave1 {
+.wave {
   position: absolute;
   bottom: -60px;
   left: 0;
 }
 
-.wave1.move {
+.wave.move {
   bottom: 0;
 }
 
-.plus1 {
+.plus {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -469,11 +469,11 @@ body {
   opacity: 0;
 }
 
-.plus1.move {
+.plus.move {
   opacity: 1;
 }
 
-.photo_p1 {
+.photo_p {
   position: absolute;
   top: 214px;
   left: 18px;
@@ -481,139 +481,7 @@ body {
   color: #313031;
 }
 
-.photo_p1.move {
-  top: 184px;
-}
-
-.photo_image2 {
-  filter: brightness(50%);
-}
-
-.photo_image2.move {
-  filter: brightness(100%);
-}
-
-.wave2 {
-  position: absolute;
-  bottom: -60px;
-  left: 0;
-}
-
-.wave2.move {
-  bottom: 0;
-}
-
-.plus2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  color: #313031;
-  opacity: 0;
-}
-
-.plus2.move {
-  opacity: 1;
-}
-
-.photo_p2 {
-  position: absolute;
-  top: 214px;
-  left: 18px;
-  font-size: 18px;
-  color: #313031;
-}
-
-.photo_p2.move {
-  top: 184px;
-}
-
-.photo_image3 {
-  filter: brightness(50%);
-}
-
-.photo_image3.move {
-  filter: brightness(100%);
-}
-
-.wave3 {
-  position: absolute;
-  bottom: -60px;
-  left: 0;
-}
-
-.wave3.move {
-  bottom: 0;
-}
-
-.plus3 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  color: #313031;
-  opacity: 0;
-}
-
-.plus3.move {
-  opacity: 1;
-}
-
-.photo_p3 {
-  position: absolute;
-  top: 214px;
-  left: 18px;
-  font-size: 18px;
-  color: #313031;
-}
-
-.photo_p3.move {
-  top: 184px;
-}
-
-.photo_image4 {
-  filter: brightness(50%);
-}
-
-.photo_image4.move {
-  filter: brightness(100%);
-}
-
-.wave4 {
-  position: absolute;
-  bottom: -60px;
-  left: 0;
-}
-
-.wave4.move {
-  bottom: 0;
-}
-
-.plus4 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  color: #313031;
-  opacity: 0;
-}
-
-.plus4.move {
-  opacity: 1;
-}
-
-.photo_p4 {
-  position: absolute;
-  top: 214px;
-  left: 18px;
-  font-size: 18px;
-  color: #313031;
-}
-
-.photo_p4.move {
+.photo_p.move {
   top: 184px;
 }
 
