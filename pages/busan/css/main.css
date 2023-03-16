@@ -92,7 +92,6 @@ body {
   height: 100%;
   max-height: 786px;
   margin: 0 auto;
-  /* aspect-ratio: 16/9; */
 }
 
 .bul {
@@ -101,13 +100,10 @@ body {
 }
 
 .bul .bli {
-  /* aspect-ratio: 16/9; */
-  width: 1600px;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
   height: 786px;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   background-position: center center;
 }
 
