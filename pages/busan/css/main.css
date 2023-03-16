@@ -85,17 +85,30 @@ body {
 }
 
 /* container */
+
 .background {
-  width: 1600px;
-  height: 786px;
+  width: 100%;
+  max-width: 1600px;
+  height: 100%;
+  max-height: 786px;
   margin: 0 auto;
+  /* aspect-ratio: 16/9; */
+}
+
+.bul {
+  display: flex;
+  justify-content: center;
 }
 
 .bul .bli {
-  width: 100%;
+  /* aspect-ratio: 16/9; */
+  width: 1600px;
+  max-width: 100%;
+  max-height: 100%;
   height: 786px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
+  background-position: center center;
 }
 
 .bul .bli_1 {
@@ -110,7 +123,7 @@ body {
 
 /* wbox_01 */
 .wbox_01 {
-  width: 1300px;
+  max-width: 1300px;
   height: 74px;
   background-color: #f6f7f9;
   margin: 0 auto;
@@ -1010,6 +1023,11 @@ body {
 }
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
+}
+@media (max-width: 1200px) {
+  .wbox_01 {
+    position: inherit;
+  }
 }
 
 @media (max-width: 768px) {
