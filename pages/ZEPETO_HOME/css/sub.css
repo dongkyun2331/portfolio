@@ -202,9 +202,6 @@ ul {
   font-weight: 600;
   font-size: 46px;
   color: #292930;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame2_p {
@@ -216,9 +213,6 @@ ul {
   line-height: 19.36px;
   text-align: center;
   color: #36363c;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame2_support {
@@ -235,9 +229,6 @@ ul {
   color: #fefdff;
   font-weight: 400;
   font-size: 15px;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame2_ul {
@@ -247,9 +238,6 @@ ul {
   display: flex;
   gap: 22px;
   flex-wrap: wrap;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame2_li {
@@ -297,9 +285,6 @@ ul {
   font-weight: 600;
   font-size: 40px;
   color: #000;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame3_ul {
@@ -308,9 +293,6 @@ ul {
   left: 203px;
   display: flex;
   flex-wrap: wrap;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame3_li {
@@ -345,9 +327,6 @@ ul {
   position: absolute;
   top: 381px;
   left: 141px;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame4 {
@@ -378,9 +357,6 @@ ul {
   font-size: 41px;
   text-align: center;
   margin-top: 86px;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame4_p {
@@ -388,9 +364,6 @@ ul {
   font-size: 16px;
   text-align: center;
   margin-top: 12px;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame4_ul {
@@ -672,9 +645,6 @@ ul {
   font-weight: 700;
   font-size: 36px;
   color: #000;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame5_ul {
@@ -728,9 +698,6 @@ ul {
   font-size: 40px;
   line-height: 48.41px;
   text-align: center;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame6_rectangle {
@@ -744,9 +711,6 @@ ul {
   color: #fff;
   text-align: center;
   line-height: 39px;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame8 {
