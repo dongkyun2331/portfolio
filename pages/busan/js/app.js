@@ -70,4 +70,6 @@ $('.y1').magnificPopup({
 $('.photo li').hover(function () {
   $('.wave').toggleClass('move')
   $('.photo_image').toggleClass('move')
+  $('.photo li p').toggleClass('move')
+  $('.plus').toggleClass('move')
 })

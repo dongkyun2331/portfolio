@@ -459,12 +459,30 @@ body {
   bottom: 0;
 }
 
-.photo li .plus .photo li p {
+.photo li .plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #313031;
+  opacity: 0;
+}
+
+.photo li .plus.move {
+  opacity: 1;
+}
+
+.photo li p {
   position: absolute;
   top: 214px;
   left: 18px;
   font-size: 18px;
   color: #313031;
+}
+
+.photo li p.move {
+  top: 184px;
 }
 
 .youtube {
