@@ -73,16 +73,15 @@ body {
   color: #666666;
 }
 
-.lan .line {
-  border-right: 1px solid #666666;
-  margin-bottom: 115px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
 .lan img {
   width: 33px;
   height: 33px;
   margin: 10px;
+}
+
+.bars {
+  display: none;
+  font-size: 36px;
 }
 
 /* container */
@@ -1024,6 +1023,10 @@ body {
     background-color: #fff;
   }
 
+  .menu.active {
+    left: 0;
+  }
+
   .logo {
     width: 91px;
     height: 80px;
@@ -1044,12 +1047,37 @@ body {
     display: block;
   }
 
+  .menu ul li {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background-color: #356ed5;
+    border: 1px solid #fff;
+  }
+
+  .menu ul li a {
+    color: #fff;
+    line-height: 50px;
+  }
+
   .lan {
     float: none;
     display: flex;
   }
 
+  .bars {
+    display: initial;
+    position: absolute;
+    right: 26px;
+    top: 26px;
+  }
+
   .sns {
     display: none;
+  }
+
+  .lan {
+    font-size: 12px;
+    margin-left: 50px;
   }
 }
