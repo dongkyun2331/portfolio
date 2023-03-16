@@ -271,13 +271,11 @@ body {
   /* image 2 */
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 100%);
+  transform: translateX(-50%);
   /* left: 138px; */
   top: 236px;
   width: 800px;
   height: 405.47px;
-  opacity: 0;
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .Frame3_text {
