@@ -31,9 +31,9 @@ body {
 
 .title {
   position: fixed;
-  top: 0;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
   width: 1600px;
   height: 70px;
   z-index: 1;
@@ -41,11 +41,6 @@ body {
 
 .title_nav {
   display: flex;
-}
-
-.bars {
-  display: none;
-  font-size: 36px;
 }
 
 .head {
@@ -66,10 +61,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.nav {
-  display: flex;
 }
 
 .menu ul {
@@ -1030,17 +1021,4 @@ body {
 }
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
-}
-
-@media screen and (max-width: 767px) {
-  .bars {
-    display: initial;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .nav {
-    display: none;
-  }
 }
