@@ -75,8 +75,3 @@ $('.photo li').hover(function () {
   $(this).find('.photo_p').toggleClass('move')
   $(this).find('.plus').toggleClass('move')
 })
-
-$('.bars').click(function () {
-  $('.title_nav').toggleClass('active')
-  $(this).find('i').toggleClass('xi-close')
-})
