@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -16,51 +16,41 @@ ul {
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
-.title_all {
+.header {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
   width: 100%;
   height: 70px;
+  z-index: 2;
   background-color: #fff;
-  z-index: 1;
 }
 
-.title {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  width: 1600px;
-  height: 70px;
-  z-index: 1;
-}
-
-.title_nav {
+.header_nav {
   display: flex;
 }
 
-.head {
+.logo {
   background-color: #0050a0;
   width: 182px;
   height: 160px;
   margin: 0 0 0 199px;
+  text-align: center;
 }
 
-.head img {
+.logo > img {
   width: 74px;
-  margin: 30px 0 0 55px;
+  margin-top: 30px;
 }
 
-.head h1 {
+.logo > h1 {
   color: #f3f7fb;
   font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .menu ul {
@@ -398,7 +388,7 @@ body {
 }
 
 .number::after {
-  content: '/2';
+  content: "/2";
   color: #1f609b;
 }
 
@@ -667,7 +657,7 @@ body {
 }
 
 .blue {
-  background-image: url('../images/Shape.png');
+  background-image: url("../images/Shape.png");
   background-repeat: no-repeat;
   background-position: -404px -270px;
   height: 371px;
@@ -950,7 +940,7 @@ body {
 }
 
 .copyright_top .address:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 1px;
@@ -967,7 +957,7 @@ body {
 }
 
 .copyright_top .tel:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 1px;
@@ -1021,4 +1011,45 @@ body {
 }
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+
+  .logo {
+    width: 91px;
+    height: 80px;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+  .logo > img {
+    width: 37px;
+    margin-top: 15px;
+  }
+
+  .logo > h1 {
+    font-size: 9px;
+  }
+
+  .menu ul {
+    display: block;
+  }
+
+  .lan {
+    float: none;
+    display: flex;
+  }
+
+  .sns {
+    display: none;
+  }
 }
