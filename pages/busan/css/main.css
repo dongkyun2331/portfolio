@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -16,7 +16,7 @@ ul {
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .header {
@@ -29,10 +29,6 @@ body {
   height: 70px;
   z-index: 2;
   background-color: #fff;
-}
-
-.header_nav {
-  display: flex;
 }
 
 .logo {
@@ -53,7 +49,7 @@ body {
   font-size: 18px;
 }
 
-.menu ul {
+.menu > ul {
   display: flex;
   padding: 24px 30px;
 }
@@ -396,7 +392,7 @@ body {
 }
 
 .number::after {
-  content: '/2';
+  content: "/2";
   color: #1f609b;
 }
 
@@ -665,7 +661,7 @@ body {
 }
 
 .blue {
-  background-image: url('../images/Shape.png');
+  background-image: url("../images/Shape.png");
   background-repeat: no-repeat;
   background-position: -404px -270px;
   height: 371px;
@@ -948,7 +944,7 @@ body {
 }
 
 .copyright_top .address:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 1px;
@@ -965,7 +961,7 @@ body {
 }
 
 .copyright_top .tel:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 1px;
