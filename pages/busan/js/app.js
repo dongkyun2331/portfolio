@@ -75,7 +75,3 @@ $(".photo li").hover(function () {
   $(this).find(".photo_p").toggleClass("move");
   $(this).find(".plus").toggleClass("move");
 });
-
-$(".menu li").hover(function () {
-  $(this).find(".menu1").stop().slideToggle("fast");
-});
