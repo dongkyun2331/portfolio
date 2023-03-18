@@ -50,14 +50,26 @@ body {
   font-size: 18px;
 }
 
-.menu > ul {
+.menu {
   display: flex;
   padding: 24px 30px;
 }
 
-.menu ul li a {
+.menu li a {
   margin: 35px;
   color: #666666;
+  position: relative;
+}
+
+.menu > .menu-item ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #2d72e1;
 }
 
 .menu1 {
