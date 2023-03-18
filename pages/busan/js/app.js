@@ -76,6 +76,6 @@ $(".photo li").hover(function () {
   $(this).find(".plus").toggleClass("move");
 });
 
-$(".menu1").hover(function () {
-  $(this).find(".");
+$(".menu ul li").hover(function () {
+  $(this).find(".menu1").stop().slideToggle("fast");
 });
