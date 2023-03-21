@@ -1,5 +1,5 @@
 .nav li:nth-child(3) a::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -20,11 +20,36 @@
   gap: 35px;
 }
 
-.work > li > a > img {
+.work > li > a {
   width: 300px;
   height: 225px;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
 }
+
+.busan {
+  background-image: url('../images/busan_main.jpg');
+}
+
+.shoes {
+  background-image: url('../images/shoes_main.png');
+}
+
+.galaxy {
+  background-image: url('../images/galaxy.jpg');
+}
+
+.zepeto {
+  background-image: url('../images/zepeto_main.jpg');
+}
+
+.space {
+  background-image: url('../images/space.jpg');
+}
+
+/* .memo {
+  background-image: url('../images/memo.png');
+} */
 
 .work > li > a > img:hover {
   scale: 1.1;
