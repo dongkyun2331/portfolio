@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>프론트엔드</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/front.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <div class="header">
+      <ul class="nav">
+        <li><a href="../index.html">홈</a></li>
+        <li><a href="./profile.html">프로필</a></li>
+        <li><a href="./publishing.html">퍼블리싱</a></li>
+        <li><a href="./uiux.html">UI/UX</a></li>
+        <li><a href="./graphic_design.html">그래픽 디자인</a></li>
+      </ul>
+      <div class="bars">
+        <i class="xi-bars"></i>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="work">
+        <li class="work1">
+          <a class="busan" href="./busan.html"></a>
+        </li>
+        <li class="work2">
+          <a class="shoes" href="./shoes.html"></a>
+        </li>
+        <li class="work3">
+          <a class="galaxy" href="./galaxy.html"></a>
+        </li>
+        <li class="work4">
+          <a class="zepeto" href="./zepeto.html"></a>
+        </li>
+        <li class="work5">
+          <a class="space" href="./space.html"></a>
+        </li>
+        <li class="work6">
+          <a class="memo" href="./memo.html"></a>
+        </li>
+        <li class="work7">
+          <a class="mars" href="./mars.html"></a>
+        </li>
+      </ul>
+    </div>
+    <script src="../js/common.js"></script>
+    <script>
+      ScrollReveal().reveal(".work1", {
+        delay: 100,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".work2", {
+        delay: 200,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".work3", {
+        delay: 300,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".work4", {
+        delay: 400,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".work5", {
+        delay: 500,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".work6", {
+        delay: 600,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".work7", {
+        delay: 700,
+        distance: "60px",
+        origin: "bottom",
+      });
+
+      $(".bars").click(function () {
+        $(".nav").toggleClass("active");
+        $(this).find("i").toggleClass("xi-close");
+      });
+    </script>
+  </body>
+</html>
