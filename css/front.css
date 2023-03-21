@@ -1,5 +1,5 @@
-.nav li:nth-child(3) a::after {
-  content: '';
+.nav li:nth-child(6) a::after {
+  content: "";
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -30,32 +30,8 @@
   background-size: cover;
 }
 
-.busan {
-  background-image: url('../images/busan_main.jpg');
-}
-
-.shoes {
-  background-image: url('../images/shoes_main.png');
-}
-
-.galaxy {
-  background-image: url('../images/galaxy.jpg');
-}
-
-.zepeto {
-  background-image: url('../images/zepeto_main.jpg');
-}
-
-.space {
-  background-image: url('../images/space.jpg');
-}
-
 .memo {
-  background-image: url('../images/memo.png');
-}
-
-.mars {
-  background-image: url('../images/mars-main.png');
+  background-image: url("../images/memo.png");
 }
 
 .work > li > a:hover {

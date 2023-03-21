@@ -1,5 +1,5 @@
-.nav li:nth-child(3) a::after {
-  content: '';
+.nav li:nth-child(6) a::after {
+  content: "";
   position: absolute;
   background-color: #ffb800;
   left: 0;
