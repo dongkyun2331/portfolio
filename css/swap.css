@@ -91,6 +91,10 @@
     top: 26px;
   }
 
+  .intro > p {
+    width: 300px;
+  }
+
   .intro > .link {
     width: 100px;
     left: 10.41%;
