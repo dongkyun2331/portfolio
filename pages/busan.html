@@ -111,6 +111,10 @@
         distance: "60px",
         origin: "bottom",
       });
+      $(".bars").click(function () {
+        $(".nav").toggleClass("active");
+        $(this).find("i").toggleClass("xi-close");
+      });
     </script>
   </body>
 </html>
