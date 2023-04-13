@@ -1,5 +1,5 @@
 .nav li:nth-child(3) a::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -31,31 +31,31 @@
 }
 
 .busan {
-  background-image: url('../images/busan_main.jpg');
+  background-image: url("../images/busan_main.jpg");
 }
 
 .shoes {
-  background-image: url('../images/shoes_main.png');
+  background-image: url("../images/shoes_main.png");
 }
 
 .galaxy {
-  background-image: url('../images/galaxy.jpg');
+  background-image: url("../images/galaxy.jpg");
 }
 
 .zepeto {
-  background-image: url('../images/zepeto_main.jpg');
+  background-image: url("../images/zepeto_main.jpg");
 }
 
 .space {
-  background-image: url('../images/space.jpg');
+  background-image: url("../images/space.jpg");
 }
 
 .memo {
-  background-image: url('../images/memo.png');
+  background-image: url("../images/memo.png");
 }
 
 .mars {
-  background-image: url('../images/mars-main.png');
+  background-image: url("../images/mars-main.png");
 }
 
 .work > li > a:hover {
@@ -63,7 +63,7 @@
   transition: 0.5s;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
   .container {
     margin-top: 60px;
   }

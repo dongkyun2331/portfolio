@@ -47,7 +47,7 @@
   transition: 0.5s;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
   .container {
     margin-top: 60px;
   }

@@ -8,7 +8,7 @@ li::marker {
 }
 
 .nav li:nth-child(2) a::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -110,7 +110,7 @@ li::marker {
   margin-top: 25px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
   .container {
     display: block;
     padding: 10px;

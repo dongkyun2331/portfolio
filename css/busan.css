@@ -1,5 +1,5 @@
 .nav li:nth-child(3) a::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #ffb800;
   left: 0;
@@ -118,7 +118,7 @@
   margin-top: 100px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
   .container > .intro > p {
     top: 100px;
     right: 10.41%;
