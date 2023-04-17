@@ -93,10 +93,12 @@
   .intro > .link {
     width: 100px;
     left: 10.41%;
+    top: 260px;
   }
 
   .intro > .github > a > img {
     width: 50px;
     left: 50%;
+    top: 260px;
   }
 }
