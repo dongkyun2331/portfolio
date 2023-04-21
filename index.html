@@ -53,54 +53,59 @@
         <li class="icons5"><img src="./images/css.png" alt="" /></li>
         <li class="icons6"><img src="./images/js.png" alt="" /></li>
         <li class="icons7"><img src="./images/jquery.png" alt="" /></li>
+        <li class="icons8"><img src="./images/react.png" alt="" /></li>
       </ul>
     </div>
 
     <script>
-      $(function () {
-        $(".typed").typing({
-          strings: ['"안녕하세요, 개발을 좋아하는 임동균입니다."'],
-          color: "black",
-        });
-      });
-
       ScrollReveal().reveal(".profile", {
         distance: "60px",
         origin: "bottom",
       });
 
-      ScrollReveal().reveal(".icons1", {
-        delay: 5000,
-        distance: "60px",
-        origin: "bottom",
+      $(function () {
+        $(".typed").typing({
+          strings: ['"프론트엔드개발자 스페셜리스트로 성장할 임동균입니다."'],
+          color: "black",
+        });
+        ScrollReveal().reveal(".icons1", {
+          delay: 5500,
+          distance: "60px",
+          origin: "bottom",
+        });
       });
       ScrollReveal().reveal(".icons2", {
-        delay: 5300,
+        delay: 5800,
         distance: "60px",
         origin: "bottom",
       });
       ScrollReveal().reveal(".icons3", {
-        delay: 5600,
+        delay: 6100,
         distance: "60px",
         origin: "bottom",
       });
       ScrollReveal().reveal(".icons4", {
-        delay: 5900,
+        delay: 6400,
         distance: "60px",
         origin: "bottom",
       });
       ScrollReveal().reveal(".icons5", {
-        delay: 6200,
+        delay: 6700,
         distance: "60px",
         origin: "bottom",
       });
       ScrollReveal().reveal(".icons6", {
-        delay: 6500,
+        delay: 7000,
         distance: "60px",
         origin: "bottom",
       });
       ScrollReveal().reveal(".icons7", {
-        delay: 6800,
+        delay: 7300,
+        distance: "60px",
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".icons8", {
+        delay: 7600,
         distance: "60px",
         origin: "bottom",
       });
