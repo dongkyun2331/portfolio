@@ -58,6 +58,10 @@
   background-image: url("../images/mars-main.png");
 }
 
+.kokoa {
+  background-image: url("../images/kokoa.png");
+}
+
 .work > li > a:hover {
   scale: 1.1;
   transition: 0.5s;
